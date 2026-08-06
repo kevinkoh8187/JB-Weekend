@@ -4,57 +4,92 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#17324d">
+  <meta name="description" content="JB Family Weekend itinerary for 7–10 August 2026.">
+  <meta property="og:title" content="JB Family Weekend · 7–10 Aug 2026">
+  <meta property="og:description" content="A family itinerary covering farms, malls and a relaxed Johor Bahru weekend.">
+  <meta property="og:image" content="ChatGPT Image Aug 6, 2026, 03_37_20 PM.png">
+  <meta property="og:type" content="website">
   <title>JB Family Weekend · 7–10 Aug 2026</title>
   <style>
     :root {
       --bg:#f5f7f8; --card:#fff; --ink:#17212b; --muted:#65717d;
-      --brand:#17324d; --accent:#e9a23b; --line:#dfe5e8; --ok:#287d5a;
+      --brand:#17324d; --brand-2:#285d74; --accent:#e9a23b; --line:#dfe5e8;
+      --ok:#287d5a; --shadow:0 10px 30px rgba(23,50,77,.09);
     }
     *{box-sizing:border-box}
-    html{width:100%;max-width:100%;overflow-x:hidden} body{width:100%;max-width:100%;margin:0;background:var(--bg);color:var(--ink);font:clamp(15px,1.8vw,17px)/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;overflow-x:hidden}
-    header{background:linear-gradient(135deg,#17324d,#285d74);color:white;padding:32px 20px 26px}
-    .wrap{width:100%;max-width:960px;margin:0 auto;padding-left:clamp(12px,3vw,24px);padding-right:clamp(12px,3vw,24px)}
-    h1{margin:0 0 6px;font-size:2rem;line-height:1.15}
-    .sub{opacity:.9}
-    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
-    .chip{background:rgba(255,255,255,.14);padding:7px 10px;border-radius:999px;font-size:.88rem}
-    nav{position:sticky;top:0;z-index:5;background:rgba(245,247,248,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-    nav .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:10px;padding-bottom:10px}
-    nav a{white-space:nowrap;text-decoration:none;color:var(--brand);background:white;border:1px solid var(--line);padding:8px 12px;border-radius:999px;font-weight:700;font-size:.9rem}
-    main{width:100%;padding-top:18px;padding-bottom:42px}
-    section{scroll-margin-top:72px;margin-bottom:22px}
-    .dayhead{display:flex;justify-content:space-between;align-items:end;margin:18px 2px 10px}
-    .dayhead h2{margin:0;font-size:1.35rem}
-    .date{color:var(--muted);font-size:.9rem}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin:10px 0;box-shadow:0 5px 16px rgba(23,50,77,.05)}
-    .activity{display:grid;grid-template-columns:34px 1fr;gap:12px}
-    input[type=checkbox]{width:22px;height:22px;margin-top:3px;accent-color:var(--ok)}
-    .time{font-weight:800;color:var(--brand);font-size:.92rem}
-    h3{margin:3px 0 5px;font-size:1.08rem}
-    p{margin:6px 0;color:var(--muted)}
-    .buttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-    .btn{display:inline-block;text-decoration:none;border-radius:10px;padding:9px 11px;font-weight:750;font-size:.9rem;background:var(--brand);color:white}
-    .btn.alt{background:#eef3f5;color:var(--brand);border:1px solid var(--line)}
-    .note{border-left:4px solid var(--accent);padding-left:12px}
-    .optional{border-style:dashed}
-    .tag{display:inline-block;background:#fff3df;color:#7a4b00;padding:3px 8px;border-radius:999px;font-size:.78rem;font-weight:750}
-    details{margin-top:10px}
-    summary{cursor:pointer;font-weight:750;color:var(--brand)}
-    ul{padding-left:20px;color:var(--muted)}
-    .footer{font-size:.86rem;color:var(--muted);text-align:center;margin-top:28px}
-    @media (min-width:700px){.photo{display:block;width:100%;max-width:100%;height:auto;object-fit:contain;margin:0 0 13px;border-radius:12px}.photo.sks{height:auto;object-position:center}.hero-photo{position:relative;width:100%;background:#17324d;overflow:hidden}}
-    @media (max-width:460px){h1{font-size:1.55rem}}
-  
+    html{scroll-behavior:smooth;width:100%;max-width:100%;overflow-x:hidden}
+    body{width:100%;max-width:100%;margin:0;background:var(--bg);color:var(--ink);font:clamp(15px,1.8vw,17px)/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;overflow-x:hidden}
     img,svg,video,canvas{max-width:100%;height:auto}
-    .card{width:100%}
-    .activity{grid-template-columns:minmax(28px,34px) minmax(0,1fr)}
-    .buttons{width:100%}
-    .btn{max-width:100%;overflow-wrap:anywhere}
+    .wrap{width:100%;max-width:960px;margin:0 auto;padding-left:clamp(12px,3vw,24px);padding-right:clamp(12px,3vw,24px)}
+
+    .hero-photo{position:relative;min-height:clamp(430px,58vw,610px);overflow:hidden;background:var(--brand);border-radius:0 0 28px 28px;isolation:isolate}
+    .hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%;transform:scale(1.02);animation:heroZoom 9s ease-out both}
+    .hero-overlay{position:absolute;inset:0;z-index:1;display:flex;align-items:flex-end;padding:48px 0;background:linear-gradient(to top,rgba(8,24,39,.94) 0%,rgba(8,24,39,.58) 43%,rgba(8,24,39,.12) 78%,rgba(8,24,39,.03) 100%);color:#fff}
+    .hero-content{max-width:760px;animation:heroRise .7s ease-out both}
+    .eyebrow{display:inline-flex;align-items:center;gap:7px;padding:6px 10px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:rgba(255,255,255,.12);backdrop-filter:blur(8px);font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    h1{margin:12px 0 7px;font-size:clamp(2.15rem,7vw,4.6rem);line-height:.98;letter-spacing:-.04em;text-shadow:0 4px 24px rgba(0,0,0,.28)}
+    .sub{opacity:.94;font-size:clamp(.95rem,2.4vw,1.18rem)}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+    .chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(8px);padding:7px 11px;border-radius:999px;font-size:.86rem}
+
+    nav{position:sticky;top:0;z-index:20;background:rgba(245,247,248,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(223,229,232,.9)}
+    nav .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
+    nav .wrap::-webkit-scrollbar{display:none}
+    nav a{white-space:nowrap;text-decoration:none;color:var(--brand);background:#fff;border:1px solid var(--line);padding:8px 13px;border-radius:999px;font-weight:800;font-size:.9rem;transition:.2s ease}
+    nav a:hover,nav a.active{background:var(--brand);color:#fff;border-color:var(--brand);transform:translateY(-1px)}
+
+    main{width:100%;padding-top:18px;padding-bottom:42px}
+    section{scroll-margin-top:78px;margin-bottom:24px}
+    .dayhead{display:flex;justify-content:space-between;align-items:end;margin:22px 2px 10px}
+    .dayhead h2{margin:0;font-size:1.4rem}
+    .date{color:var(--muted);font-size:.9rem}
+    .card{width:100%;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin:10px 0;box-shadow:var(--shadow);transition:transform .2s ease,opacity .2s ease,box-shadow .2s ease}
+    .card:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(23,50,77,.12)}
+    .activity{display:grid;grid-template-columns:minmax(28px,34px) minmax(0,1fr);gap:12px}
+    .activity.completed{opacity:.62}
+    .activity.completed h3{text-decoration:line-through}
+    input[type=checkbox]{width:22px;height:22px;margin-top:3px;accent-color:var(--ok);cursor:pointer}
+    .time{font-weight:850;color:var(--brand);font-size:.92rem}
+    h3{margin:3px 0 5px;font-size:1.1rem}
+    p{margin:6px 0;color:var(--muted)}
+    .buttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;width:100%}
+    .btn{display:inline-block;max-width:100%;overflow-wrap:anywhere;text-decoration:none;border:0;border-radius:10px;padding:9px 12px;font:inherit;font-weight:800;font-size:.9rem;background:var(--brand);color:#fff;cursor:pointer;transition:.2s ease}
+    .btn:hover{transform:translateY(-1px);filter:brightness(1.07)}
+    .btn.alt{background:#eef3f5;color:var(--brand);border:1px solid var(--line)}
+    .note{border-left:4px solid var(--accent);padding-left:13px}
+    .optional{border-style:dashed}
+    .tag{display:inline-block;background:#fff3df;color:#7a4b00;padding:3px 8px;border-radius:999px;font-size:.78rem;font-weight:800}
+    details{margin-top:10px}
+    summary{cursor:pointer;font-weight:800;color:var(--brand)}
+    ul{padding-left:20px;color:var(--muted)}
     textarea{max-width:100%;resize:vertical}
+    .photo{display:block;width:100%;height:auto;object-fit:cover;margin:0 0 13px;border-radius:12px}
+    .photo-credit{margin:-6px 0 10px;color:var(--muted);font-size:.75rem;font-style:italic}
+    .place-placeholder{width:calc(100% + 32px);height:155px;margin:-16px -16px 15px;display:grid;place-items:center;text-align:center;background:linear-gradient(135deg,#f7f4ed,#dce9e2);border-radius:18px 18px 0 0}
+    .place-placeholder .icon{font-size:3rem}
+    .place-placeholder strong{color:var(--brand)}
+    .place-placeholder small{display:block;color:var(--muted);font-size:.86rem}
+
+    .progress-card{margin-top:2px}
+    .progress-row{display:flex;justify-content:space-between;gap:12px;align-items:center}
+    .progress-row span{color:var(--muted);font-size:.88rem}
+    .progress-track{height:10px;margin-top:10px;border-radius:999px;background:#e7edf0;overflow:hidden}
+    .progress-bar{width:0;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--ok),#47a879);transition:width .3s ease}
+    .countdown{display:flex;justify-content:space-between;gap:12px;align-items:center}
+    .countdown strong{color:var(--brand)}
+    .quick-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .celebration{display:none;text-align:center;border:1px solid #b9decf;background:#f0fbf6}
+    .celebration.show{display:block;animation:pop .35s ease-out both}
+    .footer{font-size:.86rem;color:var(--muted);text-align:center;margin-top:28px}
+
+    @keyframes heroZoom{from{transform:scale(1.08)}to{transform:scale(1.02)}}
+    @keyframes heroRise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+    @keyframes pop{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:scale(1)}}
+
     @media (max-width:600px){
-      .hero-overlay{position:relative;background:#17324d;padding:18px 0}
-      .hero-image{width:100%;height:auto}
-      h1{font-size:clamp(1.45rem,7vw,1.9rem)}
+      .hero-photo{min-height:500px;border-radius:0 0 22px 22px}
+      .hero-image{object-position:56% center}
+      .hero-overlay{padding:28px 0}
       .sub{font-size:.92rem}
       .chips{gap:6px}
       .chip{font-size:.78rem;padding:5px 8px}
@@ -63,17 +98,18 @@
       .buttons{display:grid;grid-template-columns:1fr}
       .btn{text-align:center;width:100%}
       nav a{font-size:.85rem;padding:7px 10px}
+      .place-placeholder{width:calc(100% + 28px);margin:-14px -14px 15px}
+      .countdown,.progress-row{align-items:flex-start;flex-direction:column;gap:4px}
     }
-
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
   </style>
 </head>
 <body>
 <header class="hero-photo">
-<img class="hero-image"
-     src="ChatGPT Image Aug 6, 2026, 03_37_20 PM.png"
-     alt="JB Family Weekend">
+  <img class="hero-image" src="ChatGPT Image Aug 6, 2026, 03_37_20 PM.png" alt="Children enjoying a family outing">
   <div class="hero-overlay">
-    <div class="wrap">
+    <div class="wrap hero-content">
+      <span class="eyebrow">Family escape · Johor Bahru</span>
       <h1>JB Family Weekend</h1>
       <div class="sub">7–10 August 2026 · 7 adults · 3 kids (ages 4, 6 & 9)</div>
       <div class="chips">
@@ -89,6 +125,21 @@
 </div></nav>
 
 <main class="wrap">
+  <div class="card countdown">
+    <div><strong id="countdownTitle">Trip countdown</strong><p id="countdownText">Calculating…</p></div>
+    <div class="quick-links">
+      <a class="btn alt" href="https://www.google.com/search?q=Johor+Bahru+weather" target="_blank" rel="noopener noreferrer">Check weather</a>
+      <a class="btn alt" href="https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/woodlands.html" target="_blank" rel="noopener noreferrer">Checkpoint cameras</a>
+    </div>
+  </div>
+
+  <div class="card progress-card">
+    <div class="progress-row"><strong>Trip progress</strong><span id="progressText">0 of 0 completed</span></div>
+    <div class="progress-track" aria-hidden="true"><div id="progressBar" class="progress-bar"></div></div>
+  </div>
+
+  <div id="celebration" class="card celebration"><h3>🎉 Trip complete!</h3><p>Hope everyone had a wonderful JB family weekend.</p></div>
+
   <div class="card note">
     <strong>Suggested timings</strong>
     <p>The times below are flexible. For a group of 10, allow an extra 15–20 minutes for parking, toilets and regrouping.</p>
@@ -97,75 +148,72 @@
   <section id="fri">
     <div class="dayhead"><h2>Friday · Arrival</h2><span class="date">7 Aug</span></div>
     <div class="card activity">
-      <input type="checkbox" data-id="fri-arrive">
+      <input type="checkbox" data-id="fri-arrive" aria-label="Mark arrival activity completed">
       <div><div class="time">Flexible</div><h3>Drive in, check in and settle down</h3>
       <p>Keep the evening light. Confirm Saturday’s farm plan and split passengers between the two cars.</p>
-      <div class="buttons"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=2%20Jalan%20Indah%2012/9%2C%20Johor%20Bahru%2C%20Johor" target="_blank">Open AirBnB in Maps</a></div></div>
+      <div class="buttons"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=2%20Jalan%20Indah%2012/9%2C%20Johor%20Bahru%2C%20Johor" target="_blank" rel="noopener noreferrer">Open AirBnB in Maps</a></div></div>
     </div>
   </section>
 
   <section id="sat">
     <div class="dayhead"><h2>Saturday · Farms & Eco Botanic</h2><span class="date">8 Aug</span></div>
     <div class="card activity">
-      <input type="checkbox" data-id="sat-farm">
+      <input type="checkbox" data-id="sat-farm" aria-label="Mark Gentle Farms completed">
       <div><img class="photo" src="https://static.wixstatic.com/media/43960e_652ffa33142a489da696f1759f8a68bb~mv2.jpg/v1/fill/w_980%2Ch_1307%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/43960e_652ffa33142a489da696f1759f8a68bb~mv2.jpg" alt="Children feeding goats at Gentle Farms" loading="lazy" decoding="async" width="980" height="1307">
       <div class="photo-credit">Photo: Gentle Farms official farm-tour gallery</div>
       <div class="time">9:30 AM departure · 10:00 AM–12:00 PM</div><h3>Gentle Farms</h3>
       <p>Family farm visit and animal feeding. Weekend opening is currently listed as 9 AM–5 PM; the free-and-easy tour is available for walk-ins during opening hours.</p>
       <details><summary>Family notes</summary><ul><li>Wear covered shoes.</li><li>Bring water, hats and insect repellent.</li><li>Check the weather before leaving.</li></ul></details>
       <div class="buttons">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=2%20Jalan%20Indah%2012/9%2C%20Johor%20Bahru%2C%20Johor&destination=Gentle%20Farms%2C%20Jelutong%2C%2081550%20Gelang%20Patah%2C%20Johor%2C%20Malaysia&travelmode=driving" target="_blank">Drive there</a>
-        <a class="btn alt" href="https://www.gentlefarms.my/" target="_blank">Official site</a>
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=2%20Jalan%20Indah%2012/9%2C%20Johor%20Bahru%2C%20Johor&destination=Gentle%20Farms%2C%20Jelutong%2C%2081550%20Gelang%20Patah%2C%20Johor%2C%20Malaysia&travelmode=driving" target="_blank" rel="noopener noreferrer">Drive there</a>
+        <a class="btn alt" href="https://www.gentlefarms.my/" target="_blank" rel="noopener noreferrer">Official site</a>
       </div></div>
     </div>
     <div class="card activity">
-      <input type="checkbox" data-id="sat-lunch">
-      <div><div class="time">12:15 PM–1:30 PM</div><h3>Lunch & cool-down</h3>
-      <p>Choose somewhere convenient near Gelang Patah or continue toward Eco Botanic.</p></div>
+      <input type="checkbox" data-id="sat-lunch" aria-label="Mark Saturday lunch completed">
+      <div><div class="time">12:15 PM–1:30 PM</div><h3>Lunch & cool-down</h3><p>Choose somewhere convenient near Gelang Patah or continue toward Eco Botanic.</p></div>
     </div>
     <div class="card activity">
-      <input type="checkbox" data-id="sat-eco">
+      <input type="checkbox" data-id="sat-eco" aria-label="Mark Eco Galleria completed">
       <div>
-      <div style="width:calc(100% + 32px);height:155px;margin:-16px -16px 15px;background:linear-gradient(135deg,#f7f4ed,#dce9e2);display:grid;place-items:center;text-align:center">
-        <div><div style="font-size:3rem">🌿🏛️</div><strong style="color:#17324d">Eco Galleria</strong><div style="color:#65717d;font-size:.86rem">cafés · shopping · cool-down</div></div>
+        <div class="place-placeholder"><div><div class="icon">🌿🏛️</div><strong>Eco Galleria</strong><small>cafés · shopping · cool-down</small></div></div>
+        <div class="time">2:00 PM onwards</div><h3>Eco Galleria</h3>
+        <p>Easy afternoon for cafés, shopping and an air-conditioned break after the farm.</p>
+        <div class="buttons">
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Gentle%20Farms%2C%20Jelutong%2C%2081550%20Gelang%20Patah%2C%20Johor%2C%20Malaysia&destination=Eco%20Galleria%2C%20Jalan%20Eko%20Botani%203%2C%20Taman%20Eko%20Botani%2C%2079100%20Iskandar%20Puteri%2C%20Johor%2C%20Malaysia&travelmode=driving" target="_blank" rel="noopener noreferrer">Farm → Eco Galleria</a>
+          <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Eco%20Galleria%2C%20Jalan%20Eko%20Botani%203%2C%20Taman%20Eko%20Botani%2C%2079100%20Iskandar%20Puteri%2C%20Johor%2C%20Malaysia" target="_blank" rel="noopener noreferrer">View location</a>
+        </div>
       </div>
-      <div class="time">2:00 PM onwards</div><h3>Eco Galleria</h3>
-      <p>Easy afternoon for cafés, shopping and an air-conditioned break after the farm.</p>
-      <div class="buttons">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Gentle%20Farms%2C%20Jelutong%2C%2081550%20Gelang%20Patah%2C%20Johor%2C%20Malaysia&destination=Eco%20Galleria%2C%20Jalan%20Eko%20Botani%203%2C%20Taman%20Eko%20Botani%2C%2079100%20Iskandar%20Puteri%2C%20Johor%2C%20Malaysia&travelmode=driving" target="_blank">Farm → Eco Galleria</a>
-        <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Eco%20Galleria%2C%20Jalan%20Eko%20Botani%203%2C%20Taman%20Eko%20Botani%2C%2079100%20Iskandar%20Puteri%2C%20Johor%2C%20Malaysia" target="_blank">View location</a>
-      </div></div>
     </div>
   </section>
 
   <section id="sun">
     <div class="dayhead"><h2>Sunday · Capybaras & City Mall</h2><span class="date">9 Aug</span></div>
     <div class="card activity">
-      <input type="checkbox" data-id="sun-capy">
-      <div><img class="photo capy" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Capybara%20(Hydrochoerus%20hydrochaeris).JPG?width=1200" alt="Capybara" loading="lazy" decoding="async" width="1200" height="800">
+      <input type="checkbox" data-id="sun-capy" aria-label="Mark Capyba Pet Farm completed">
+      <div><img class="photo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Capybara%20(Hydrochoerus%20hydrochaeris).JPG?width=1200" alt="Capybara" loading="lazy" decoding="async" width="1200" height="800">
       <div class="photo-credit">Illustrative capybara photo: Wikimedia Commons</div>
       <div class="time">10:00 AM departure · 10:30 AM–12:00 PM</div><h3>Capyba Pet Farm</h3>
       <p>Interactive animal visit featuring capybaras and other animals. Reconfirm current admission arrangements and opening time before setting off.</p>
       <details><summary>Family notes</summary><ul><li>Supervise hand-feeding closely.</li><li>Wash hands before snacks or lunch.</li><li>A shorter visit may suit the 4-year-old.</li></ul></details>
       <div class="buttons">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=2%20Jalan%20Indah%2012/9%2C%20Johor%20Bahru%2C%20Johor&destination=Capyba%20Pet%20Farm%2C%20PTD68149%20P8%2C%20Jln%20Persisiran%20Sutera%20Danga%201%2C%20Taman%20Sutera%20Utama%2C%2081300%20Skudai%2C%20Johor%2C%20Malaysia&travelmode=driving" target="_blank">Drive there</a>
-        <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Capyba%20Pet%20Farm%2C%20PTD68149%20P8%2C%20Jln%20Persisiran%20Sutera%20Danga%201%2C%20Taman%20Sutera%20Utama%2C%2081300%20Skudai%2C%20Johor%2C%20Malaysia" target="_blank">View location</a>
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=2%20Jalan%20Indah%2012/9%2C%20Johor%20Bahru%2C%20Johor&destination=Capyba%20Pet%20Farm%2C%20PTD68149%20P8%2C%20Jln%20Persisiran%20Sutera%20Danga%201%2C%20Taman%20Sutera%20Utama%2C%2081300%20Skudai%2C%20Johor%2C%20Malaysia&travelmode=driving" target="_blank" rel="noopener noreferrer">Drive there</a>
+        <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Capyba%20Pet%20Farm%2C%20PTD68149%20P8%2C%20Jln%20Persisiran%20Sutera%20Danga%201%2C%20Taman%20Sutera%20Utama%2C%2081300%20Skudai%2C%20Johor%2C%20Malaysia" target="_blank" rel="noopener noreferrer">View location</a>
       </div></div>
     </div>
     <div class="card activity">
-      <input type="checkbox" data-id="sun-lunch">
-      <div><div class="time">12:15 PM–1:30 PM</div><h3>Lunch</h3>
-      <p>Eat near Sutera Utama or head toward central JB, depending on parking and the children’s energy.</p></div>
+      <input type="checkbox" data-id="sun-lunch" aria-label="Mark Sunday lunch completed">
+      <div><div class="time">12:15 PM–1:30 PM</div><h3>Lunch</h3><p>Eat near Sutera Utama or head toward central JB, depending on parking and the children’s energy.</p></div>
     </div>
     <div class="card activity">
-      <input type="checkbox" data-id="sun-sks">
-      <div><img class="photo sks" src="https://sksgroup.com.my/wp-content/uploads/2024/03/header-retail-skscitymalljbcc-1.webp" alt="SKS City Mall JBCC exterior rendering" loading="lazy" decoding="async" width="1200" height="675">
+      <input type="checkbox" data-id="sun-sks" aria-label="Mark SKS City Mall completed">
+      <div><img class="photo" src="https://sksgroup.com.my/wp-content/uploads/2024/03/header-retail-skscitymalljbcc-1.webp" alt="SKS City Mall JBCC exterior rendering" loading="lazy" decoding="async" width="1200" height="675">
       <div class="photo-credit">Image: SKS Group official project page</div>
       <div class="time">2:00 PM onwards</div><h3>SKS City Mall JBCC</h3>
       <p>Indoor afternoon for shopping, food and rest. Current published hours are 10 AM–10 PM daily.</p>
       <div class="buttons">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Capyba%20Pet%20Farm%2C%20PTD68149%20P8%2C%20Jln%20Persisiran%20Sutera%20Danga%201%2C%20Taman%20Sutera%20Utama%2C%2081300%20Skudai%2C%20Johor%2C%20Malaysia&destination=SKS%20City%20Mall%20JBCC%2C%20Jalan%20Storey%2C%20Bukit%20Senyum%2C%2080300%20Johor%20Bahru%2C%20Johor%2C%20Malaysia&travelmode=driving" target="_blank">Farm → SKS Mall</a>
-        <a class="btn alt" href="https://skscitymalljbcc.com/" target="_blank">Official site</a>
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Capyba%20Pet%20Farm%2C%20PTD68149%20P8%2C%20Jln%20Persisiran%20Sutera%20Danga%201%2C%20Taman%20Sutera%20Utama%2C%2081300%20Skudai%2C%20Johor%2C%20Malaysia&destination=SKS%20City%20Mall%20JBCC%2C%20Jalan%20Storey%2C%20Bukit%20Senyum%2C%2080300%20Johor%20Bahru%2C%20Johor%2C%20Malaysia&travelmode=driving" target="_blank" rel="noopener noreferrer">Farm → SKS Mall</a>
+        <a class="btn alt" href="https://skscitymalljbcc.com/" target="_blank" rel="noopener noreferrer">Official site</a>
       </div></div>
     </div>
   </section>
@@ -176,7 +224,7 @@
     <div class="card activity"><input type="checkbox" data-id="mon-market"><div><div class="time">11:15 AM</div><h3>Supermarket stop</h3><p>Buy groceries and road snacks. Assign one adult to watch the kids while others shop.</p></div></div>
     <div class="card activity"><input type="checkbox" data-id="mon-wash"><div><div class="time">12:15 PM</div><h3>Car wash</h3><p>Use two nearby bays or stagger the cars so the group is not waiting together.</p></div></div>
     <div class="card activity"><input type="checkbox" data-id="mon-home"><div><div class="time">After lunch</div><h3>Drive back to Singapore</h3><p>Check live checkpoint traffic before choosing the route and departure time.</p>
-      <div class="buttons"><a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Woodlands+Checkpoint" target="_blank">Woodlands route</a><a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Tuas+Checkpoint" target="_blank">Tuas route</a></div>
+      <div class="buttons"><a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Woodlands+Checkpoint" target="_blank" rel="noopener noreferrer">Woodlands route</a><a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Tuas+Checkpoint" target="_blank" rel="noopener noreferrer">Tuas route</a></div>
     </div></div>
   </section>
 
@@ -194,6 +242,7 @@
       <h3>Trip notes</h3>
       <textarea id="tripNotes" placeholder="Add restaurant choices, booking references or reminders…" style="width:100%;min-height:130px;border:1px solid var(--line);border-radius:12px;padding:12px;font:inherit"></textarea>
       <p>Your checkboxes and notes are saved in this browser.</p>
+      <div class="buttons"><button type="button" class="btn alt" id="resetTrip">Reset checklist and notes</button></div>
     </div>
   </section>
 
@@ -201,13 +250,74 @@
 </main>
 
 <script>
-  document.querySelectorAll('input[type="checkbox"][data-id]').forEach(cb => {
+  const checkboxes = [...document.querySelectorAll('input[type="checkbox"][data-id]')];
+  const progressText = document.getElementById('progressText');
+  const progressBar = document.getElementById('progressBar');
+  const celebration = document.getElementById('celebration');
+
+  function updateCardState(cb) {
+    cb.closest('.activity')?.classList.toggle('completed', cb.checked);
+  }
+
+  function updateProgress() {
+    const completed = checkboxes.filter(cb => cb.checked).length;
+    const total = checkboxes.length;
+    const percent = total ? Math.round((completed / total) * 100) : 0;
+    progressText.textContent = `${completed} of ${total} completed`;
+    progressBar.style.width = `${percent}%`;
+    celebration.classList.toggle('show', completed === total && total > 0);
+  }
+
+  checkboxes.forEach(cb => {
     cb.checked = localStorage.getItem('jb-' + cb.dataset.id) === '1';
-    cb.addEventListener('change', () => localStorage.setItem('jb-' + cb.dataset.id, cb.checked ? '1' : '0'));
+    updateCardState(cb);
+    cb.addEventListener('change', () => {
+      localStorage.setItem('jb-' + cb.dataset.id, cb.checked ? '1' : '0');
+      updateCardState(cb);
+      updateProgress();
+    });
   });
+
   const notes = document.getElementById('tripNotes');
   notes.value = localStorage.getItem('jb-trip-notes') || '';
   notes.addEventListener('input', () => localStorage.setItem('jb-trip-notes', notes.value));
+
+  document.getElementById('resetTrip').addEventListener('click', () => {
+    if (!confirm('Reset all checkboxes and trip notes?')) return;
+    Object.keys(localStorage).filter(key => key.startsWith('jb-')).forEach(key => localStorage.removeItem(key));
+    checkboxes.forEach(cb => { cb.checked = false; updateCardState(cb); });
+    notes.value = '';
+    updateProgress();
+  });
+
+  const sections = [...document.querySelectorAll('main section[id]')];
+  const navLinks = [...document.querySelectorAll('nav a')];
+  const observer = new IntersectionObserver(entries => {
+    const visible = entries.filter(entry => entry.isIntersecting).sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
+    if (!visible) return;
+    navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + visible.target.id));
+  }, {rootMargin:'-25% 0px -60% 0px', threshold:[0,.25,.5]});
+  sections.forEach(section => observer.observe(section));
+
+  const tripStart = new Date('2026-08-07T00:00:00+08:00');
+  const tripEnd = new Date('2026-08-10T23:59:59+08:00');
+  const now = new Date();
+  const title = document.getElementById('countdownTitle');
+  const text = document.getElementById('countdownText');
+  if (now < tripStart) {
+    const days = Math.ceil((tripStart - now) / 86400000);
+    title.textContent = 'Trip countdown';
+    text.textContent = `${days} day${days === 1 ? '' : 's'} to go`;
+  } else if (now <= tripEnd) {
+    const day = Math.min(4, Math.floor((now - tripStart) / 86400000) + 1);
+    title.textContent = `Day ${day} of 4`;
+    text.textContent = 'Have a wonderful family weekend!';
+  } else {
+    title.textContent = 'Trip memories';
+    text.textContent = 'The itinerary remains available as your family trip record.';
+  }
+
+  updateProgress();
 </script>
 </body>
 </html>
