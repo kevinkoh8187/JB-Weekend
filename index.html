@@ -88,6 +88,8 @@
       width: 100%;
       overflow: hidden;
       background: var(--brand);
+      box-shadow: 0 12px 32px rgba(23, 50, 77, 0.14);
+      animation: heroFadeIn 0.55s ease both;
     }
 
     .hero-image {
@@ -256,50 +258,6 @@
 
     .optional {
       border-style: dashed;
-    }
-
-    .progress-card {
-      margin-bottom: 18px;
-    }
-
-    .progress-row {
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-      align-items: flex-start;
-    }
-
-    .progress-text {
-      color: var(--muted);
-      font-size: 0.9rem;
-      text-align: right;
-    }
-
-    .progress-track {
-      width: 100%;
-      height: 12px;
-      margin-top: 12px;
-      overflow: hidden;
-      border-radius: 999px;
-      background: #e5ebee;
-    }
-
-    .progress-bar {
-      width: 0;
-      height: 100%;
-      border-radius: inherit;
-      background: linear-gradient(90deg, var(--ok), #4ca37d);
-      transition: width 0.25s ease;
-    }
-
-    .celebration {
-      display: none;
-      margin-top: 12px;
-      padding: 11px 12px;
-      border-radius: 12px;
-      background: #eaf7f0;
-      color: #1f6d4d;
-      font-weight: 800;
     }
 
     .dayhead {
@@ -501,6 +459,187 @@
       text-align: center;
     }
 
+    .floating-tools {
+      position: fixed;
+      right: max(16px, env(safe-area-inset-right));
+      bottom: max(18px, env(safe-area-inset-bottom));
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+    }
+
+    .back-to-top {
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(23, 50, 77, 0.12);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.96);
+      color: var(--brand);
+      box-shadow: 0 8px 24px rgba(23, 50, 77, 0.18);
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(8px);
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .progress-popover {
+      width: min(300px, calc(100vw - 32px));
+      padding: 14px;
+      border: 1px solid rgba(23, 50, 77, 0.12);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: 0 14px 36px rgba(23, 50, 77, 0.22);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(8px) scale(0.98);
+      transform-origin: bottom right;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .progress-popover.open {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0) scale(1);
+    }
+
+    .progress-popover h3 {
+      margin: 0 0 10px;
+      color: var(--brand);
+    }
+
+    .progress-summary {
+      margin-bottom: 10px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .day-progress-list {
+      display: grid;
+      gap: 7px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .day-progress-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 8px 10px;
+      border-radius: 10px;
+      background: var(--soft);
+      font-size: 0.88rem;
+    }
+
+    .day-progress-item.current {
+      outline: 2px solid rgba(23, 50, 77, 0.18);
+      background: #f7fafb;
+    }
+
+    .floating-progress {
+      position: relative;
+      width: 88px;
+      height: 88px;
+      padding: 0;
+      border: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.96);
+      box-shadow: 0 10px 30px rgba(23, 50, 77, 0.25);
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .floating-progress:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 34px rgba(23, 50, 77, 0.28);
+    }
+
+    .floating-progress svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      transform: rotate(-90deg);
+    }
+
+    .progress-circle-bg,
+    .progress-circle-value {
+      fill: none;
+      stroke-width: 8;
+    }
+
+    .progress-circle-bg {
+      stroke: #e4eaed;
+    }
+
+    .progress-circle-value {
+      stroke: #3c78a8;
+      stroke-linecap: round;
+      transition: stroke-dashoffset 0.35s ease, stroke 0.25s ease;
+    }
+
+    .floating-progress-text {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.05;
+      color: var(--brand);
+    }
+
+    .floating-progress-text strong {
+      font-size: 1.14rem;
+    }
+
+    .floating-progress-text span {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 0.7rem;
+    }
+
+    .floating-progress.complete {
+      animation: progressComplete 0.6s ease;
+      box-shadow: 0 0 0 6px rgba(233, 162, 59, 0.18), 0 14px 36px rgba(122, 75, 0, 0.28);
+    }
+
+    .confetti-piece {
+      position: fixed;
+      top: -14px;
+      z-index: 2000;
+      width: 9px;
+      height: 14px;
+      border-radius: 2px;
+      pointer-events: none;
+      animation: confettiFall 2s linear forwards;
+    }
+
+    @keyframes heroFadeIn {
+      from { opacity: 0; transform: translateY(-8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes progressComplete {
+      50% { transform: scale(1.12); }
+    }
+
+    @keyframes confettiFall {
+      to { transform: translate3d(var(--drift), 110vh, 0) rotate(720deg); opacity: 0.95; }
+    }
+
     @media (max-width: 600px) {
       .hero-info {
         padding: 20px 0 22px;
@@ -549,13 +688,22 @@
         font-size: 0.82rem;
       }
 
-      .progress-row {
-        display: block;
+      .floating-tools {
+        right: max(12px, env(safe-area-inset-right));
+        bottom: max(14px, env(safe-area-inset-bottom));
       }
 
-      .progress-text {
-        margin-top: 6px;
-        text-align: left;
+      .floating-progress {
+        width: 74px;
+        height: 74px;
+      }
+
+      .floating-progress-text strong {
+        font-size: 1rem;
+      }
+
+      .floating-progress-text span {
+        font-size: 0.64rem;
       }
     }
 
@@ -649,32 +797,6 @@
       </p>
     </div>
 
-    <div class="card progress-card">
-      <div class="progress-row">
-        <strong>
-          Trip progress
-          <span class="thai" lang="th">ความคืบหน้าของทริป</span>
-        </strong>
-        <span id="progressText" class="progress-text">0 of 0 completed</span>
-      </div>
-
-      <div
-        class="progress-track"
-        role="progressbar"
-        aria-label="Trip progress"
-        aria-valuemin="0"
-        aria-valuemax="100"
-        aria-valuenow="0"
-      >
-        <div id="progressBar" class="progress-bar"></div>
-      </div>
-
-      <div id="celebration" class="celebration">
-        🎉 Trip complete! Hope everyone had a wonderful weekend.
-        <span class="thai" lang="th">ทริปเสร็จสมบูรณ์แล้ว! ขอให้ทุกคนมีความสุขกับสุดสัปดาห์นี้</span>
-      </div>
-    </div>
-
     <section id="fri">
       <div class="dayhead">
         <h2>
@@ -762,7 +884,7 @@
               <span class="thai" lang="th">คำแนะนำสำหรับครอบครัว</span>
             </summary>
             <ul>
-              <li>Wear covered shoes - optional.<span class="thai" lang="th">สวมรองเท้าหุ้มส้น -ไม่จำเป็น</span></li>
+              <li>Optional – Wear covered shoes.<span class="thai" lang="th">แนะนำให้สวมรองเท้าหุ้มส้น (ไม่บังคับ)</span></li>
               <li>Bring water, hats and insect repellent.<span class="thai" lang="th">นำน้ำดื่ม หมวก และยากันแมลง</span></li>
               <li>Check the weather before leaving.<span class="thai" lang="th">ตรวจสอบสภาพอากาศก่อนออกเดินทาง</span></li>
             </ul>
@@ -1161,6 +1283,37 @@
     </div>
   </main>
 
+  <div class="floating-tools" aria-live="polite">
+    <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <div class="progress-popover" id="progressPopover" aria-hidden="true">
+      <h3>
+        Trip progress
+        <span class="thai" lang="th">ความคืบหน้าของทริป</span>
+      </h3>
+      <div class="progress-summary" id="progressSummary">0 of 0 completed</div>
+      <ul class="day-progress-list" id="dayProgressList"></ul>
+    </div>
+
+    <button
+      type="button"
+      class="floating-progress"
+      id="floatingProgress"
+      aria-label="Open trip progress"
+      aria-expanded="false"
+      aria-controls="progressPopover"
+    >
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <circle class="progress-circle-bg" cx="50" cy="50" r="42"></circle>
+        <circle class="progress-circle-value" id="progressCircle" cx="50" cy="50" r="42"></circle>
+      </svg>
+      <span class="floating-progress-text">
+        <strong id="progressPercent">0%</strong>
+        <span id="progressCount">0/0</span>
+      </span>
+    </button>
+  </div>
+
   <script>
     const checkboxes = Array.from(
       document.querySelectorAll('input[type="checkbox"][data-id]')
@@ -1170,18 +1323,80 @@
       checkbox => checkbox.closest('.activity')
     );
 
-    const progressText = document.getElementById('progressText');
-    const progressBar = document.getElementById('progressBar');
-    const progressTrack = document.querySelector('.progress-track');
-    const celebration = document.getElementById('celebration');
     const notes = document.getElementById('tripNotes');
     const resetButton = document.getElementById('resetTrip');
+    const progressCircle = document.getElementById('progressCircle');
+    const progressPercent = document.getElementById('progressPercent');
+    const progressCount = document.getElementById('progressCount');
+    const progressSummary = document.getElementById('progressSummary');
+    const floatingProgress = document.getElementById('floatingProgress');
+    const progressPopover = document.getElementById('progressPopover');
+    const dayProgressList = document.getElementById('dayProgressList');
+    const backToTop = document.getElementById('backToTop');
+
+    const circleRadius = 42;
+    const circleCircumference = 2 * Math.PI * circleRadius;
+    let currentSectionId = 'fri';
+    let confettiShown = false;
+
+    progressCircle.style.strokeDasharray = String(circleCircumference);
+    progressCircle.style.strokeDashoffset = String(circleCircumference);
+
+    const dayLabels = {
+      fri: ['Friday', 'วันศุกร์'],
+      sat: ['Saturday', 'วันเสาร์'],
+      sun: ['Sunday', 'วันอาทิตย์'],
+      mon: ['Monday', 'วันจันทร์'],
+      notes: ['Checklist', 'รายการตรวจสอบ']
+    };
 
     function updateCardState(checkbox) {
       const activity = checkbox.closest('.activity');
-
       if (activity) {
         activity.classList.toggle('completed', checkbox.checked);
+      }
+    }
+
+    function progressColour(percentage) {
+      if (percentage === 100) return '#e9a23b';
+      if (percentage >= 70) return '#287d5a';
+      if (percentage >= 30) return '#d9852f';
+      return '#3c78a8';
+    }
+
+    function renderDayProgress() {
+      dayProgressList.innerHTML = '';
+
+      Object.entries(dayLabels).forEach(([id, labels]) => {
+        const section = document.getElementById(id);
+        if (!section) return;
+
+        const sectionBoxes = Array.from(
+          section.querySelectorAll('input[type="checkbox"][data-id]')
+        );
+        const done = sectionBoxes.filter(box => box.checked).length;
+        const total = sectionBoxes.length;
+        const item = document.createElement('li');
+        item.className = `day-progress-item${id === currentSectionId ? ' current' : ''}`;
+        item.innerHTML = `
+          <span>${labels[0]}<span class="thai" lang="th">${labels[1]}</span></span>
+          <strong>${done}/${total}</strong>
+        `;
+        dayProgressList.appendChild(item);
+      });
+    }
+
+    function launchConfetti() {
+      const colours = ['#e9a23b', '#287d5a', '#3c78a8', '#d85f5f', '#8b6ccf'];
+      for (let i = 0; i < 42; i += 1) {
+        const piece = document.createElement('span');
+        piece.className = 'confetti-piece';
+        piece.style.left = `${Math.random() * 100}vw`;
+        piece.style.background = colours[i % colours.length];
+        piece.style.setProperty('--drift', `${Math.round((Math.random() - 0.5) * 180)}px`);
+        piece.style.animationDelay = `${Math.random() * 0.35}s`;
+        document.body.appendChild(piece);
+        setTimeout(() => piece.remove(), 2400);
       }
     }
 
@@ -1191,11 +1406,28 @@
         checkbox => checkbox.checked
       ).length;
       const percentage = total === 0 ? 0 : Math.round((completed / total) * 100);
+      const offset = circleCircumference - (percentage / 100) * circleCircumference;
 
-      progressText.innerHTML = `${completed} of ${total} completed<br><span lang="th">เสร็จแล้ว ${completed} จาก ${total} รายการ</span>`;
-      progressBar.style.width = `${percentage}%`;
-      progressTrack.setAttribute('aria-valuenow', String(percentage));
-      celebration.style.display = total > 0 && completed === total ? 'block' : 'none';
+      progressCircle.style.strokeDashoffset = String(offset);
+      progressCircle.style.stroke = progressColour(percentage);
+      progressPercent.textContent = `${percentage}%`;
+      progressCount.textContent = `${completed}/${total}`;
+      progressSummary.innerHTML = `${completed} of ${total} completed<br><span lang="th">เสร็จแล้ว ${completed} จาก ${total} รายการ</span>`;
+
+      const complete = total > 0 && completed === total;
+      floatingProgress.classList.toggle('complete', complete);
+      floatingProgress.setAttribute(
+        'aria-label',
+        `Trip progress: ${completed} of ${total} completed. ความคืบหน้า ${completed} จาก ${total} รายการ`
+      );
+
+      if (complete && !confettiShown) {
+        confettiShown = true;
+        launchConfetti();
+      }
+      if (!complete) confettiShown = false;
+
+      renderDayProgress();
     }
 
     checkboxes.forEach(checkbox => {
@@ -1207,14 +1439,12 @@
           `jb-${checkbox.dataset.id}`,
           checkbox.checked ? '1' : '0'
         );
-
         updateCardState(checkbox);
         updateProgress();
       });
     });
 
     notes.value = localStorage.getItem('jb-trip-notes') || '';
-
     notes.addEventListener('input', () => {
       localStorage.setItem('jb-trip-notes', notes.value);
     });
@@ -1223,10 +1453,7 @@
       const confirmed = window.confirm(
         'Reset all checkboxes and trip notes?\nรีเซ็ตช่องทำเครื่องหมายและบันทึกทั้งหมดหรือไม่?'
       );
-
-      if (!confirmed) {
-        return;
-      }
+      if (!confirmed) return;
 
       Object.keys(localStorage)
         .filter(key => key.startsWith('jb-'))
@@ -1236,10 +1463,33 @@
         checkbox.checked = false;
         updateCardState(checkbox);
       });
-
       notes.value = '';
       updateProgress();
     });
+
+    floatingProgress.addEventListener('click', () => {
+      const open = !progressPopover.classList.contains('open');
+      progressPopover.classList.toggle('open', open);
+      progressPopover.setAttribute('aria-hidden', String(!open));
+      floatingProgress.setAttribute('aria-expanded', String(open));
+      floatingProgress.setAttribute('aria-label', open ? 'Close trip progress' : 'Open trip progress');
+    });
+
+    document.addEventListener('click', event => {
+      if (!event.target.closest('.floating-tools')) {
+        progressPopover.classList.remove('open');
+        progressPopover.setAttribute('aria-hidden', 'true');
+        floatingProgress.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    window.addEventListener('scroll', () => {
+      backToTop.classList.toggle('visible', window.scrollY > 500);
+    }, { passive: true });
 
     const sections = Array.from(document.querySelectorAll('main section[id]'));
     const navLinks = Array.from(document.querySelectorAll('nav a[href^="#"]'));
@@ -1250,16 +1500,16 @@
           .filter(entry => entry.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
 
-        if (!visibleEntry) {
-          return;
-        }
+        if (!visibleEntry) return;
+        currentSectionId = visibleEntry.target.id;
 
         navLinks.forEach(link => {
           link.classList.toggle(
             'active',
-            link.getAttribute('href') === `#${visibleEntry.target.id}`
+            link.getAttribute('href') === `#${currentSectionId}`
           );
         });
+        renderDayProgress();
       },
       {
         rootMargin: '-25% 0px -60% 0px',
@@ -1268,7 +1518,6 @@
     );
 
     sections.forEach(section => sectionObserver.observe(section));
-
     updateProgress();
   </script>
 </body>
