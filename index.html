@@ -11,17 +11,17 @@
       --brand:#17324d; --accent:#e9a23b; --line:#dfe5e8; --ok:#287d5a;
     }
     *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+    html{width:100%;max-width:100%;overflow-x:hidden} body{width:100%;max-width:100%;margin:0;background:var(--bg);color:var(--ink);font:clamp(15px,1.8vw,17px)/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;overflow-x:hidden}
     header{background:linear-gradient(135deg,#17324d,#285d74);color:white;padding:32px 20px 26px}
-    .wrap{max-width:760px;margin:auto}
+    .wrap{width:100%;max-width:960px;margin:0 auto;padding-left:clamp(12px,3vw,24px);padding-right:clamp(12px,3vw,24px)}
     h1{margin:0 0 6px;font-size:2rem;line-height:1.15}
     .sub{opacity:.9}
     .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
     .chip{background:rgba(255,255,255,.14);padding:7px 10px;border-radius:999px;font-size:.88rem}
     nav{position:sticky;top:0;z-index:5;background:rgba(245,247,248,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-    nav .wrap{display:flex;gap:8px;overflow:auto;padding:10px 14px}
+    nav .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:10px;padding-bottom:10px}
     nav a{white-space:nowrap;text-decoration:none;color:var(--brand);background:white;border:1px solid var(--line);padding:8px 12px;border-radius:999px;font-weight:700;font-size:.9rem}
-    main{padding:18px 14px 42px}
+    main{width:100%;padding-top:18px;padding-bottom:42px}
     section{scroll-margin-top:72px;margin-bottom:22px}
     .dayhead{display:flex;justify-content:space-between;align-items:end;margin:18px 2px 10px}
     .dayhead h2{margin:0;font-size:1.35rem}
@@ -42,18 +42,43 @@
     summary{cursor:pointer;font-weight:750;color:var(--brand)}
     ul{padding-left:20px;color:var(--muted)}
     .footer{font-size:.86rem;color:var(--muted);text-align:center;margin-top:28px}
-    @media (min-width:700px){.photo{height:190px}.photo.sks{height:170px}.hero-photo{min-height:260px}}
+    @media (min-width:700px){.photo{display:block;width:100%;max-width:100%;height:auto;object-fit:contain;margin:0 0 13px;border-radius:12px}.photo.sks{height:auto;object-position:center}.hero-photo{position:relative;width:100%;background:#17324d;overflow:hidden}}
     @media (max-width:460px){h1{font-size:1.55rem}}
+  
+    img,svg,video,canvas{max-width:100%;height:auto}
+    .card{width:100%}
+    .activity{grid-template-columns:minmax(28px,34px) minmax(0,1fr)}
+    .buttons{width:100%}
+    .btn{max-width:100%;overflow-wrap:anywhere}
+    textarea{max-width:100%;resize:vertical}
+    @media (max-width:600px){
+      .hero-overlay{position:relative;background:#17324d;padding:18px 0}
+      .hero-image{width:100%;height:auto}
+      h1{font-size:clamp(1.45rem,7vw,1.9rem)}
+      .sub{font-size:.92rem}
+      .chips{gap:6px}
+      .chip{font-size:.78rem;padding:5px 8px}
+      .card{border-radius:14px;padding:14px}
+      .activity{gap:10px}
+      .buttons{display:grid;grid-template-columns:1fr}
+      .btn{text-align:center;width:100%}
+      nav a{font-size:.85rem;padding:7px 10px}
+    }
+
   </style>
 </head>
 <body>
 <header class="hero-photo">
-  <div class="wrap">
-    <h1>JB Family Weekend</h1>
-    <div class="sub">7–10 August 2026 · 7 adults · 3 kids (ages 4, 6 & 9)</div>
-    <div class="chips">
-      <span class="chip">🚗 2 cars</span><span class="chip">🏠 Bukit Indah base</span>
-      <span class="chip">🐐 Farm day</span><span class="chip">🛍 Mall breaks</span>
+  <img class="hero-image" src="https://static.wixstatic.com/media/43960e_652ffa33142a489da696f1759f8a68bb~mv2.jpg/v1/fill/w_980%2Ch_1307%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/43960e_652ffa33142a489da696f1759f8a68bb~mv2.jpg"
+       alt="Children feeding goats at Gentle Farms" decoding="async">
+  <div class="hero-overlay">
+    <div class="wrap">
+      <h1>JB Family Weekend</h1>
+      <div class="sub">7–10 August 2026 · 7 adults · 3 kids (ages 4, 6 & 9)</div>
+      <div class="chips">
+        <span class="chip">🚗 2 cars</span><span class="chip">🏠 Bukit Indah base</span>
+        <span class="chip">🐐 Farm day</span><span class="chip">🛍 Mall breaks</span>
+      </div>
     </div>
   </div>
 </header>
