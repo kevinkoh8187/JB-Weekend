@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#17324d">
+  <title>JB Family Weekend · 7–10 Aug 2026</title>
+  <style>
+    :root {
+      --bg:#f5f7f8; --card:#fff; --ink:#17212b; --muted:#65717d;
+      --brand:#17324d; --accent:#e9a23b; --line:#dfe5e8; --ok:#287d5a;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+    header{background:linear-gradient(135deg,#17324d,#285d74);color:white;padding:32px 20px 26px}
+    .wrap{max-width:760px;margin:auto}
+    h1{margin:0 0 6px;font-size:2rem;line-height:1.15}
+    .sub{opacity:.9}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+    .chip{background:rgba(255,255,255,.14);padding:7px 10px;border-radius:999px;font-size:.88rem}
+    nav{position:sticky;top:0;z-index:5;background:rgba(245,247,248,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    nav .wrap{display:flex;gap:8px;overflow:auto;padding:10px 14px}
+    nav a{white-space:nowrap;text-decoration:none;color:var(--brand);background:white;border:1px solid var(--line);padding:8px 12px;border-radius:999px;font-weight:700;font-size:.9rem}
+    main{padding:18px 14px 42px}
+    section{scroll-margin-top:72px;margin-bottom:22px}
+    .dayhead{display:flex;justify-content:space-between;align-items:end;margin:18px 2px 10px}
+    .dayhead h2{margin:0;font-size:1.35rem}
+    .date{color:var(--muted);font-size:.9rem}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin:10px 0;box-shadow:0 5px 16px rgba(23,50,77,.05)}
+    .activity{display:grid;grid-template-columns:34px 1fr;gap:12px}
+    input[type=checkbox]{width:22px;height:22px;margin-top:3px;accent-color:var(--ok)}
+    .time{font-weight:800;color:var(--brand);font-size:.92rem}
+    h3{margin:3px 0 5px;font-size:1.08rem}
+    p{margin:6px 0;color:var(--muted)}
+    .buttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .btn{display:inline-block;text-decoration:none;border-radius:10px;padding:9px 11px;font-weight:750;font-size:.9rem;background:var(--brand);color:white}
+    .btn.alt{background:#eef3f5;color:var(--brand);border:1px solid var(--line)}
+    .note{border-left:4px solid var(--accent);padding-left:12px}
+    .optional{border-style:dashed}
+    .tag{display:inline-block;background:#fff3df;color:#7a4b00;padding:3px 8px;border-radius:999px;font-size:.78rem;font-weight:750}
+    details{margin-top:10px}
+    summary{cursor:pointer;font-weight:750;color:var(--brand)}
+    ul{padding-left:20px;color:var(--muted)}
+    .footer{font-size:.86rem;color:var(--muted);text-align:center;margin-top:28px}
+    @media (max-width:460px){h1{font-size:1.7rem} header{padding-top:26px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>JB Family Weekend</h1>
+    <div class="sub">7–10 August 2026 · 7 adults · 3 kids (ages 4, 6 & 9)</div>
+    <div class="chips">
+      <span class="chip">🚗 2 cars</span><span class="chip">🏠 Bukit Indah base</span>
+      <span class="chip">🐐 Farm day</span><span class="chip">🛍 Mall breaks</span>
+    </div>
+  </div>
+</header>
+
+<nav><div class="wrap">
+  <a href="#fri">Fri</a><a href="#sat">Sat</a><a href="#sun">Sun</a><a href="#mon">Mon</a><a href="#notes">Notes</a>
+</div></nav>
+
+<main class="wrap">
+  <div class="card note">
+    <strong>Suggested timings</strong>
+    <p>The times below are flexible. For a group of 10, allow an extra 15–20 minutes for parking, toilets and regrouping.</p>
+  </div>
+
+  <section id="fri">
+    <div class="dayhead"><h2>Friday · Arrival</h2><span class="date">7 Aug</span></div>
+    <div class="card activity">
+      <input type="checkbox" data-id="fri-arrive">
+      <div><div class="time">Flexible</div><h3>Drive in, check in and settle down</h3>
+      <p>Keep the evening light. Confirm Saturday’s farm plan and split passengers between the two cars.</p>
+      <div class="buttons"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=2%20Jalan%20Indah%2012/9%2C%20Johor%20Bahru%2C%20Johor" target="_blank">Open stay in Maps</a></div></div>
+    </div>
+  </section>
+
+  <section id="sat">
+    <div class="dayhead"><h2>Saturday · Farms & Eco Botanic</h2><span class="date">8 Aug</span></div>
+    <div class="card activity">
+      <input type="checkbox" data-id="sat-farm">
+      <div><div class="time">9:30 AM departure · 10:00 AM–12:00 PM</div><h3>Gentle Farms</h3>
+      <p>Family farm visit and animal feeding. Weekend opening is currently listed as 9 AM–5 PM; the free-and-easy tour is available for walk-ins during opening hours.</p>
+      <details><summary>Family notes</summary><ul><li>Wear covered shoes.</li><li>Bring water, hats and insect repellent.</li><li>Check the weather before leaving.</li></ul></details>
+      <div class="buttons">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=2%20Jalan%20Indah%2012/9%2C%20Johor%20Bahru%2C%20Johor&destination=Gentle%20Farms%2C%20Jelutong%2C%2081550%20Gelang%20Patah%2C%20Johor%2C%20Malaysia&travelmode=driving" target="_blank">Drive there</a>
+        <a class="btn alt" href="https://www.gentlefarms.my/" target="_blank">Official site</a>
+      </div></div>
+    </div>
+    <div class="card activity">
+      <input type="checkbox" data-id="sat-lunch">
+      <div><div class="time">12:15 PM–1:30 PM</div><h3>Lunch & cool-down</h3>
+      <p>Choose somewhere convenient near Gelang Patah or continue toward Eco Botanic.</p></div>
+    </div>
+    <div class="card activity">
+      <input type="checkbox" data-id="sat-eco">
+      <div><div class="time">2:00 PM onwards</div><h3>Eco Galleria</h3>
+      <p>Easy afternoon for cafés, shopping and an air-conditioned break after the farm.</p>
+      <div class="buttons">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Gentle%20Farms%2C%20Jelutong%2C%2081550%20Gelang%20Patah%2C%20Johor%2C%20Malaysia&destination=Eco%20Galleria%2C%20Jalan%20Eko%20Botani%203%2C%20Taman%20Eko%20Botani%2C%2079100%20Iskandar%20Puteri%2C%20Johor%2C%20Malaysia&travelmode=driving" target="_blank">Farm → Eco Galleria</a>
+        <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Eco%20Galleria%2C%20Jalan%20Eko%20Botani%203%2C%20Taman%20Eko%20Botani%2C%2079100%20Iskandar%20Puteri%2C%20Johor%2C%20Malaysia" target="_blank">View location</a>
+      </div></div>
+    </div>
+  </section>
+
+  <section id="sun">
+    <div class="dayhead"><h2>Sunday · Capybaras & City Mall</h2><span class="date">9 Aug</span></div>
+    <div class="card activity">
+      <input type="checkbox" data-id="sun-capy">
+      <div><div class="time">10:00 AM departure · 10:30 AM–12:00 PM</div><h3>Capyba Pet Farm</h3>
+      <p>Interactive animal visit featuring capybaras and other animals. Reconfirm current admission arrangements and opening time before setting off.</p>
+      <details><summary>Family notes</summary><ul><li>Supervise hand-feeding closely.</li><li>Wash hands before snacks or lunch.</li><li>A shorter visit may suit the 4-year-old.</li></ul></details>
+      <div class="buttons">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=2%20Jalan%20Indah%2012/9%2C%20Johor%20Bahru%2C%20Johor&destination=Capyba%20Pet%20Farm%2C%20PTD68149%20P8%2C%20Jln%20Persisiran%20Sutera%20Danga%201%2C%20Taman%20Sutera%20Utama%2C%2081300%20Skudai%2C%20Johor%2C%20Malaysia&travelmode=driving" target="_blank">Drive there</a>
+        <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Capyba%20Pet%20Farm%2C%20PTD68149%20P8%2C%20Jln%20Persisiran%20Sutera%20Danga%201%2C%20Taman%20Sutera%20Utama%2C%2081300%20Skudai%2C%20Johor%2C%20Malaysia" target="_blank">View location</a>
+      </div></div>
+    </div>
+    <div class="card activity">
+      <input type="checkbox" data-id="sun-lunch">
+      <div><div class="time">12:15 PM–1:30 PM</div><h3>Lunch</h3>
+      <p>Eat near Sutera Utama or head toward central JB, depending on parking and the children’s energy.</p></div>
+    </div>
+    <div class="card activity">
+      <input type="checkbox" data-id="sun-sks">
+      <div><div class="time">2:00 PM onwards</div><h3>SKS City Mall JBCC</h3>
+      <p>Indoor afternoon for shopping, food and rest. Current published hours are 10 AM–10 PM daily.</p>
+      <div class="buttons">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Capyba%20Pet%20Farm%2C%20PTD68149%20P8%2C%20Jln%20Persisiran%20Sutera%20Danga%201%2C%20Taman%20Sutera%20Utama%2C%2081300%20Skudai%2C%20Johor%2C%20Malaysia&destination=SKS%20City%20Mall%20JBCC%2C%20Jalan%20Storey%2C%20Bukit%20Senyum%2C%2080300%20Johor%20Bahru%2C%20Johor%2C%20Malaysia&travelmode=driving" target="_blank">Farm → SKS Mall</a>
+        <a class="btn alt" href="https://skscitymalljbcc.com/" target="_blank">Official site</a>
+      </div></div>
+    </div>
+  </section>
+
+  <section id="mon">
+    <div class="dayhead"><h2>Monday · Easy Departure</h2><span class="date">10 Aug</span></div>
+    <div class="card activity"><input type="checkbox" data-id="mon-brunch"><div><div class="time">10:00 AM</div><h3>Brunch</h3><p>Keep it near the accommodation to reduce backtracking.</p></div></div>
+    <div class="card activity"><input type="checkbox" data-id="mon-market"><div><div class="time">11:15 AM</div><h3>Supermarket stop</h3><p>Buy groceries and road snacks. Assign one adult to watch the kids while others shop.</p></div></div>
+    <div class="card activity"><input type="checkbox" data-id="mon-wash"><div><div class="time">12:15 PM</div><h3>Car wash</h3><p>Use two nearby bays or stagger the cars so the group is not waiting together.</p></div></div>
+    <div class="card activity"><input type="checkbox" data-id="mon-home"><div><div class="time">After lunch</div><h3>Drive back to Singapore</h3><p>Check live checkpoint traffic before choosing the route and departure time.</p>
+      <div class="buttons"><a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Woodlands+Checkpoint" target="_blank">Woodlands route</a><a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Tuas+Checkpoint" target="_blank">Tuas route</a></div>
+    </div></div>
+  </section>
+
+  <section id="notes">
+    <div class="dayhead"><h2>Group checklist</h2></div>
+    <div class="card">
+      <label><input type="checkbox" data-id="n-passports"> Passports and entry requirements checked</label><br><br>
+      <label><input type="checkbox" data-id="n-cars"> Both drivers have navigation and destination pins</label><br><br>
+      <label><input type="checkbox" data-id="n-kids"> Water, wipes, spare clothes and snacks packed</label><br><br>
+      <label><input type="checkbox" data-id="n-weather"> Weather and attraction operating status checked each morning</label><br><br>
+      <label><input type="checkbox" data-id="n-traffic"> Checkpoint traffic checked before return journey</label>
+    </div>
+    <div class="card optional">
+      <span class="tag">Editable note</span>
+      <h3>Trip notes</h3>
+      <textarea id="tripNotes" placeholder="Add restaurant choices, booking references or reminders…" style="width:100%;min-height:130px;border:1px solid var(--line);border-radius:12px;padding:12px;font:inherit"></textarea>
+      <p>Your checkboxes and notes are saved in this browser.</p>
+    </div>
+  </section>
+
+  <div class="footer">JB Family Weekend · Built as a single-file static site for GitHub Pages</div>
+</main>
+
+<script>
+  document.querySelectorAll('input[type="checkbox"][data-id]').forEach(cb => {
+    cb.checked = localStorage.getItem('jb-' + cb.dataset.id) === '1';
+    cb.addEventListener('change', () => localStorage.setItem('jb-' + cb.dataset.id, cb.checked ? '1' : '0'));
+  });
+  const notes = document.getElementById('tripNotes');
+  notes.value = localStorage.getItem('jb-trip-notes') || '';
+  notes.addEventListener('input', () => localStorage.setItem('jb-trip-notes', notes.value));
+</script>
+</body>
+</html>
