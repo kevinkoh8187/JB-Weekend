@@ -4,320 +4,1272 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#17324d">
-  <meta name="description" content="JB Family Weekend itinerary for 7–10 August 2026.">
+  <meta name="description" content="Bilingual English and Thai itinerary for a JB Family Weekend, 7–10 August 2026.">
   <meta property="og:title" content="JB Family Weekend · 7–10 Aug 2026">
-  <meta property="og:description" content="A family itinerary covering farms, malls and a relaxed Johor Bahru weekend.">
-  <meta property="og:image" content="ChatGPT Image Aug 6, 2026, 03_37_20 PM.png">
+  <meta property="og:description" content="A bilingual English and Thai family itinerary for Johor Bahru.">
+  <meta property="og:image" content="ChatGPT Image Aug 6, 2026, 03_37_20 PM.PNG">
   <meta property="og:type" content="website">
   <title>JB Family Weekend · 7–10 Aug 2026</title>
+
   <style>
     :root {
-      --bg:#f5f7f8; --card:#fff; --ink:#17212b; --muted:#65717d;
-      --brand:#17324d; --brand-2:#285d74; --accent:#e9a23b; --line:#dfe5e8;
-      --ok:#287d5a; --shadow:0 10px 30px rgba(23,50,77,.09);
+      --bg: #f5f7f8;
+      --card: #ffffff;
+      --ink: #17212b;
+      --muted: #65717d;
+      --brand: #17324d;
+      --brand-2: #285d74;
+      --accent: #e9a23b;
+      --line: #dfe5e8;
+      --ok: #287d5a;
+      --soft: #eef3f5;
+      --shadow: 0 8px 24px rgba(23, 50, 77, 0.08);
     }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth;width:100%;max-width:100%;overflow-x:hidden}
-    body{width:100%;max-width:100%;margin:0;background:var(--bg);color:var(--ink);font:clamp(15px,1.8vw,17px)/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;overflow-x:hidden}
-    img,svg,video,canvas{max-width:100%;height:auto}
-    .wrap{width:100%;max-width:960px;margin:0 auto;padding-left:clamp(12px,3vw,24px);padding-right:clamp(12px,3vw,24px)}
 
-    .hero-photo{position:relative;min-height:clamp(430px,58vw,610px);overflow:hidden;background:var(--brand);border-radius:0 0 28px 28px;isolation:isolate}
-    .hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%;transform:scale(1.02);animation:heroZoom 9s ease-out both}
-    .hero-overlay{position:absolute;inset:0;z-index:1;display:flex;align-items:flex-end;padding:48px 0;background:linear-gradient(to top,rgba(8,24,39,.94) 0%,rgba(8,24,39,.58) 43%,rgba(8,24,39,.12) 78%,rgba(8,24,39,.03) 100%);color:#fff}
-    .hero-content{max-width:760px;animation:heroRise .7s ease-out both}
-    .eyebrow{display:inline-flex;align-items:center;gap:7px;padding:6px 10px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:rgba(255,255,255,.12);backdrop-filter:blur(8px);font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
-    h1{margin:12px 0 7px;font-size:clamp(2.15rem,7vw,4.6rem);line-height:.98;letter-spacing:-.04em;text-shadow:0 4px 24px rgba(0,0,0,.28)}
-    .sub{opacity:.94;font-size:clamp(.95rem,2.4vw,1.18rem)}
-    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
-    .chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(8px);padding:7px 11px;border-radius:999px;font-size:.86rem}
-
-    nav{position:sticky;top:0;z-index:20;background:rgba(245,247,248,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(223,229,232,.9)}
-    nav .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
-    nav .wrap::-webkit-scrollbar{display:none}
-    nav a{white-space:nowrap;text-decoration:none;color:var(--brand);background:#fff;border:1px solid var(--line);padding:8px 13px;border-radius:999px;font-weight:800;font-size:.9rem;transition:.2s ease}
-    nav a:hover,nav a.active{background:var(--brand);color:#fff;border-color:var(--brand);transform:translateY(-1px)}
-
-    main{width:100%;padding-top:18px;padding-bottom:42px}
-    section{scroll-margin-top:78px;margin-bottom:24px}
-    .dayhead{display:flex;justify-content:space-between;align-items:end;margin:22px 2px 10px}
-    .dayhead h2{margin:0;font-size:1.4rem}
-    .date{color:var(--muted);font-size:.9rem}
-    .card{width:100%;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin:10px 0;box-shadow:var(--shadow);transition:transform .2s ease,opacity .2s ease,box-shadow .2s ease}
-    .card:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(23,50,77,.12)}
-    .activity{display:grid;grid-template-columns:minmax(28px,34px) minmax(0,1fr);gap:12px}
-    .activity.completed{opacity:.62}
-    .activity.completed h3{text-decoration:line-through}
-    input[type=checkbox]{width:22px;height:22px;margin-top:3px;accent-color:var(--ok);cursor:pointer}
-    .time{font-weight:850;color:var(--brand);font-size:.92rem}
-    h3{margin:3px 0 5px;font-size:1.1rem}
-    p{margin:6px 0;color:var(--muted)}
-    .buttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;width:100%}
-    .btn{display:inline-block;max-width:100%;overflow-wrap:anywhere;text-decoration:none;border:0;border-radius:10px;padding:9px 12px;font:inherit;font-weight:800;font-size:.9rem;background:var(--brand);color:#fff;cursor:pointer;transition:.2s ease}
-    .btn:hover{transform:translateY(-1px);filter:brightness(1.07)}
-    .btn.alt{background:#eef3f5;color:var(--brand);border:1px solid var(--line)}
-    .note{border-left:4px solid var(--accent);padding-left:13px}
-    .optional{border-style:dashed}
-    .tag{display:inline-block;background:#fff3df;color:#7a4b00;padding:3px 8px;border-radius:999px;font-size:.78rem;font-weight:800}
-    details{margin-top:10px}
-    summary{cursor:pointer;font-weight:800;color:var(--brand)}
-    ul{padding-left:20px;color:var(--muted)}
-    textarea{max-width:100%;resize:vertical}
-    .photo{display:block;width:100%;height:auto;object-fit:cover;margin:0 0 13px;border-radius:12px}
-    .photo-credit{margin:-6px 0 10px;color:var(--muted);font-size:.75rem;font-style:italic}
-    .place-placeholder{width:calc(100% + 32px);height:155px;margin:-16px -16px 15px;display:grid;place-items:center;text-align:center;background:linear-gradient(135deg,#f7f4ed,#dce9e2);border-radius:18px 18px 0 0}
-    .place-placeholder .icon{font-size:3rem}
-    .place-placeholder strong{color:var(--brand)}
-    .place-placeholder small{display:block;color:var(--muted);font-size:.86rem}
-
-    .progress-card{margin-top:2px}
-    .progress-row{display:flex;justify-content:space-between;gap:12px;align-items:center}
-    .progress-row span{color:var(--muted);font-size:.88rem}
-    .progress-track{height:10px;margin-top:10px;border-radius:999px;background:#e7edf0;overflow:hidden}
-    .progress-bar{width:0;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--ok),#47a879);transition:width .3s ease}
-    .countdown{display:flex;justify-content:space-between;gap:12px;align-items:center}
-    .countdown strong{color:var(--brand)}
-    .quick-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .celebration{display:none;text-align:center;border:1px solid #b9decf;background:#f0fbf6}
-    .celebration.show{display:block;animation:pop .35s ease-out both}
-    .footer{font-size:.86rem;color:var(--muted);text-align:center;margin-top:28px}
-
-    @keyframes heroZoom{from{transform:scale(1.08)}to{transform:scale(1.02)}}
-    @keyframes heroRise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-    @keyframes pop{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:scale(1)}}
-
-    @media (max-width:600px){
-      .hero-photo{min-height:500px;border-radius:0 0 22px 22px}
-      .hero-image{object-position:56% center}
-      .hero-overlay{padding:28px 0}
-      .sub{font-size:.92rem}
-      .chips{gap:6px}
-      .chip{font-size:.78rem;padding:5px 8px}
-      .card{border-radius:14px;padding:14px}
-      .activity{gap:10px}
-      .buttons{display:grid;grid-template-columns:1fr}
-      .btn{text-align:center;width:100%}
-      nav a{font-size:.85rem;padding:7px 10px}
-      .place-placeholder{width:calc(100% + 28px);margin:-14px -14px 15px}
-      .countdown,.progress-row{align-items:flex-start;flex-direction:column;gap:4px}
+    * {
+      box-sizing: border-box;
     }
-    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+
+    html {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      overflow-x: hidden;
+      background: var(--bg);
+      color: var(--ink);
+      font: clamp(15px, 1.8vw, 17px) / 1.55 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Thai", sans-serif;
+    }
+
+    img,
+    svg,
+    video,
+    canvas {
+      max-width: 100%;
+      height: auto;
+    }
+
+    a,
+    button,
+    input,
+    textarea,
+    summary {
+      font: inherit;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding-left: clamp(12px, 3vw, 24px);
+      padding-right: clamp(12px, 3vw, 24px);
+    }
+
+    .thai {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 0.92em;
+      font-weight: 400;
+      line-height: 1.55;
+    }
+
+    .thai-light {
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .hero-photo {
+      width: 100%;
+      overflow: hidden;
+      background: var(--brand);
+    }
+
+    .hero-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      background: #0f2537;
+    }
+
+    .hero-info {
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #ffffff;
+      padding: 24px 0 26px;
+      border-radius: 0 0 26px 26px;
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      line-height: 1.12;
+    }
+
+    h1 .thai {
+      margin-top: 6px;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 0.58em;
+      font-weight: 600;
+    }
+
+    .sub {
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .sub .thai {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .chip {
+      padding: 8px 11px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.13);
+      font-size: 0.86rem;
+      backdrop-filter: blur(8px);
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(245, 247, 248, 0.95);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+    }
+
+    nav .wrap {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      scrollbar-width: none;
+    }
+
+    nav .wrap::-webkit-scrollbar {
+      display: none;
+    }
+
+    nav a {
+      flex: 0 0 auto;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #ffffff;
+      color: var(--brand);
+      font-size: 0.87rem;
+      font-weight: 800;
+      line-height: 1.2;
+      text-align: center;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+
+    nav a:hover {
+      transform: translateY(-1px);
+    }
+
+    nav a.active {
+      border-color: var(--brand);
+      background: var(--brand);
+      color: #ffffff;
+    }
+
+    main {
+      width: 100%;
+      padding-top: 18px;
+      padding-bottom: 42px;
+    }
+
+    section {
+      margin-bottom: 22px;
+      scroll-margin-top: 78px;
+    }
+
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .quick-card {
+      display: block;
+      min-width: 0;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--card);
+      color: var(--ink);
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(23, 50, 77, 0.05);
+    }
+
+    .quick-card strong {
+      display: block;
+      color: var(--brand);
+    }
+
+    .quick-card .thai {
+      font-size: 0.83rem;
+    }
+
+    .card {
+      width: 100%;
+      margin: 10px 0;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--card);
+      box-shadow: var(--shadow);
+    }
+
+    .note {
+      padding-left: 14px;
+      border-left: 4px solid var(--accent);
+    }
+
+    .optional {
+      border-style: dashed;
+    }
+
+    .progress-card {
+      margin-bottom: 18px;
+    }
+
+    .progress-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .progress-text {
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: right;
+    }
+
+    .progress-track {
+      width: 100%;
+      height: 12px;
+      margin-top: 12px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #e5ebee;
+    }
+
+    .progress-bar {
+      width: 0;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--ok), #4ca37d);
+      transition: width 0.25s ease;
+    }
+
+    .celebration {
+      display: none;
+      margin-top: 12px;
+      padding: 11px 12px;
+      border-radius: 12px;
+      background: #eaf7f0;
+      color: #1f6d4d;
+      font-weight: 800;
+    }
+
+    .dayhead {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 14px;
+      margin: 20px 2px 10px;
+    }
+
+    .dayhead h2 {
+      margin: 0;
+      font-size: 1.35rem;
+      line-height: 1.25;
+    }
+
+    .dayhead h2 .thai {
+      font-size: 0.73em;
+      font-weight: 600;
+    }
+
+    .date {
+      flex: 0 0 auto;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: right;
+    }
+
+    .activity {
+      display: grid;
+      grid-template-columns: minmax(28px, 34px) minmax(0, 1fr);
+      gap: 12px;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .activity.completed {
+      opacity: 0.62;
+    }
+
+    .activity.completed h3 {
+      text-decoration: line-through;
+    }
+
+    input[type="checkbox"] {
+      width: 22px;
+      height: 22px;
+      margin-top: 3px;
+      accent-color: var(--ok);
+      cursor: pointer;
+    }
+
+    .time {
+      color: var(--brand);
+      font-size: 0.92rem;
+      font-weight: 800;
+    }
+
+    .time .thai {
+      font-size: 0.88em;
+    }
+
+    h3 {
+      margin: 4px 0 5px;
+      font-size: 1.08rem;
+      line-height: 1.35;
+    }
+
+    h3 .thai {
+      font-size: 0.85em;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 6px 0;
+      color: var(--muted);
+    }
+
+    .photo {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 0 13px;
+      border-radius: 12px;
+      object-fit: contain;
+    }
+
+    .photo-credit {
+      margin: -6px 0 10px;
+      color: var(--muted);
+      font-size: 0.75rem;
+      font-style: italic;
+    }
+
+    .place-placeholder {
+      width: calc(100% + 32px);
+      height: 155px;
+      margin: -16px -16px 15px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #f7f4ed, #dce9e2);
+      border-radius: 18px 18px 0 0;
+    }
+
+    .place-placeholder .icon {
+      font-size: 3rem;
+    }
+
+    .place-placeholder strong {
+      display: block;
+      color: var(--brand);
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      width: 100%;
+      margin-top: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 100%;
+      min-height: 42px;
+      padding: 9px 12px;
+      overflow-wrap: anywhere;
+      border: 1px solid var(--brand);
+      border-radius: 10px;
+      background: var(--brand);
+      color: #ffffff;
+      font-size: 0.88rem;
+      font-weight: 800;
+      line-height: 1.3;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn.alt {
+      border-color: var(--line);
+      background: var(--soft);
+      color: var(--brand);
+    }
+
+    .btn.danger {
+      border-color: #d5b6b6;
+      background: #fff4f4;
+      color: #8b2f2f;
+    }
+
+    details {
+      margin-top: 10px;
+    }
+
+    summary {
+      color: var(--brand);
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    ul {
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #fff3df;
+      color: #7a4b00;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    textarea {
+      width: 100%;
+      max-width: 100%;
+      min-height: 140px;
+      padding: 12px;
+      resize: vertical;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #ffffff;
+      color: var(--ink);
+    }
+
+    .footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 0.86rem;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .hero-info {
+        padding: 20px 0 22px;
+        border-radius: 0 0 20px 20px;
+      }
+
+      .chips {
+        gap: 6px;
+      }
+
+      .chip {
+        padding: 6px 8px;
+        font-size: 0.78rem;
+      }
+
+      .quick-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        padding: 14px;
+        border-radius: 14px;
+      }
+
+      .activity {
+        gap: 10px;
+      }
+
+      .buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .place-placeholder {
+        width: calc(100% + 28px);
+        margin: -14px -14px 15px;
+        border-radius: 14px 14px 0 0;
+      }
+
+      nav a {
+        padding: 7px 10px;
+        font-size: 0.82rem;
+      }
+
+      .progress-row {
+        display: block;
+      }
+
+      .progress-text {
+        margin-top: 6px;
+        text-align: left;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+      }
+    }
   </style>
 </head>
+
 <body>
-<header class="hero-photo">
-  <img class="hero-image" src="ChatGPT Image Aug 6, 2026, 03_37_20 PM.png" alt="Children enjoying a family outing">
-  <div class="hero-overlay">
-    <div class="wrap hero-content">
-      <span class="eyebrow">Family escape · Johor Bahru</span>
-      <h1>JB Family Weekend</h1>
-      <div class="sub">7–10 August 2026 · 7 adults · 3 kids (ages 4, 6 & 9)</div>
-      <div class="chips">
-        <span class="chip">🚗 2 cars</span><span class="chip">🏠 Bukit Indah base</span>
-        <span class="chip">🐐 Farm day</span><span class="chip">🛍 Mall breaks</span>
-      </div>
-    </div>
-  </div>
-</header>
+  <header class="hero-photo">
+    <img
+      class="hero-image"
+      src="ChatGPT Image Aug 6, 2026, 03_37_20 PM.PNG"
+      alt="JB Family Weekend"
+      decoding="async"
+    >
 
-<nav><div class="wrap">
-  <a href="#fri">Fri</a><a href="#sat">Sat</a><a href="#sun">Sun</a><a href="#mon">Mon</a><a href="#notes">Notes</a>
-</div></nav>
+    <div class="hero-info">
+      <div class="wrap">
+        <p class="eyebrow">Johor Bahru · Malaysia</p>
+        <h1>
+          JB Family Weekend
+          <span class="thai thai-light" lang="th">ทริปครอบครัวสุดสัปดาห์ที่ยะโฮร์บาห์รู</span>
+        </h1>
 
-<main class="wrap">
-  <div class="card countdown">
-    <div><strong id="countdownTitle">Trip countdown</strong><p id="countdownText">Calculating…</p></div>
-    <div class="quick-links">
-      <a class="btn alt" href="https://www.google.com/search?q=Johor+Bahru+weather" target="_blank" rel="noopener noreferrer">Check weather</a>
-      <a class="btn alt" href="https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/woodlands.html" target="_blank" rel="noopener noreferrer">Checkpoint cameras</a>
-    </div>
-  </div>
+        <div class="sub">
+          7–10 August 2026 · 7 adults · 3 kids (ages 4, 6 &amp; 9)
+          <span class="thai thai-light" lang="th">7–10 สิงหาคม 2569 · ผู้ใหญ่ 7 คน · เด็ก 3 คน (อายุ 4, 6 และ 9 ปี)</span>
+        </div>
 
-  <div class="card progress-card">
-    <div class="progress-row"><strong>Trip progress</strong><span id="progressText">0 of 0 completed</span></div>
-    <div class="progress-track" aria-hidden="true"><div id="progressBar" class="progress-bar"></div></div>
-  </div>
-
-  <div id="celebration" class="card celebration"><h3>🎉 Trip complete!</h3><p>Hope everyone had a wonderful JB family weekend.</p></div>
-
-  <div class="card note">
-    <strong>Suggested timings</strong>
-    <p>The times below are flexible. For a group of 10, allow an extra 15–20 minutes for parking, toilets and regrouping.</p>
-  </div>
-
-  <section id="fri">
-    <div class="dayhead"><h2>Friday · Arrival</h2><span class="date">7 Aug</span></div>
-    <div class="card activity">
-      <input type="checkbox" data-id="fri-arrive" aria-label="Mark arrival activity completed">
-      <div><div class="time">Flexible</div><h3>Drive in, check in and settle down</h3>
-      <p>Keep the evening light. Confirm Saturday’s farm plan and split passengers between the two cars.</p>
-      <div class="buttons"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=2%20Jalan%20Indah%2012/9%2C%20Johor%20Bahru%2C%20Johor" target="_blank" rel="noopener noreferrer">Open AirBnB in Maps</a></div></div>
-    </div>
-  </section>
-
-  <section id="sat">
-    <div class="dayhead"><h2>Saturday · Farms & Eco Botanic</h2><span class="date">8 Aug</span></div>
-    <div class="card activity">
-      <input type="checkbox" data-id="sat-farm" aria-label="Mark Gentle Farms completed">
-      <div><img class="photo" src="https://static.wixstatic.com/media/43960e_652ffa33142a489da696f1759f8a68bb~mv2.jpg/v1/fill/w_980%2Ch_1307%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/43960e_652ffa33142a489da696f1759f8a68bb~mv2.jpg" alt="Children feeding goats at Gentle Farms" loading="lazy" decoding="async" width="980" height="1307">
-      <div class="photo-credit">Photo: Gentle Farms official farm-tour gallery</div>
-      <div class="time">9:30 AM departure · 10:00 AM–12:00 PM</div><h3>Gentle Farms</h3>
-      <p>Family farm visit and animal feeding. Weekend opening is currently listed as 9 AM–5 PM; the free-and-easy tour is available for walk-ins during opening hours.</p>
-      <details><summary>Family notes</summary><ul><li>Wear covered shoes.</li><li>Bring water, hats and insect repellent.</li><li>Check the weather before leaving.</li></ul></details>
-      <div class="buttons">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=2%20Jalan%20Indah%2012/9%2C%20Johor%20Bahru%2C%20Johor&destination=Gentle%20Farms%2C%20Jelutong%2C%2081550%20Gelang%20Patah%2C%20Johor%2C%20Malaysia&travelmode=driving" target="_blank" rel="noopener noreferrer">Drive there</a>
-        <a class="btn alt" href="https://www.gentlefarms.my/" target="_blank" rel="noopener noreferrer">Official site</a>
-      </div></div>
-    </div>
-    <div class="card activity">
-      <input type="checkbox" data-id="sat-lunch" aria-label="Mark Saturday lunch completed">
-      <div><div class="time">12:15 PM–1:30 PM</div><h3>Lunch & cool-down</h3><p>Choose somewhere convenient near Gelang Patah or continue toward Eco Botanic.</p></div>
-    </div>
-    <div class="card activity">
-      <input type="checkbox" data-id="sat-eco" aria-label="Mark Eco Galleria completed">
-      <div>
-        <div class="place-placeholder"><div><div class="icon">🌿🏛️</div><strong>Eco Galleria</strong><small>cafés · shopping · cool-down</small></div></div>
-        <div class="time">2:00 PM onwards</div><h3>Eco Galleria</h3>
-        <p>Easy afternoon for cafés, shopping and an air-conditioned break after the farm.</p>
-        <div class="buttons">
-          <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Gentle%20Farms%2C%20Jelutong%2C%2081550%20Gelang%20Patah%2C%20Johor%2C%20Malaysia&destination=Eco%20Galleria%2C%20Jalan%20Eko%20Botani%203%2C%20Taman%20Eko%20Botani%2C%2079100%20Iskandar%20Puteri%2C%20Johor%2C%20Malaysia&travelmode=driving" target="_blank" rel="noopener noreferrer">Farm → Eco Galleria</a>
-          <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Eco%20Galleria%2C%20Jalan%20Eko%20Botani%203%2C%20Taman%20Eko%20Botani%2C%2079100%20Iskandar%20Puteri%2C%20Johor%2C%20Malaysia" target="_blank" rel="noopener noreferrer">View location</a>
+        <div class="chips">
+          <span class="chip">🚗 2 cars · รถ 2 คัน</span>
+          <span class="chip">🏠 Bukit Indah base · พักที่บูกิตอินดาห์</span>
+          <span class="chip">🐐 Farm day · วันเที่ยวฟาร์ม</span>
+          <span class="chip">🛍 Mall breaks · พักที่ห้าง</span>
         </div>
       </div>
     </div>
-  </section>
+  </header>
 
-  <section id="sun">
-    <div class="dayhead"><h2>Sunday · Capybaras & City Mall</h2><span class="date">9 Aug</span></div>
-    <div class="card activity">
-      <input type="checkbox" data-id="sun-capy" aria-label="Mark Capyba Pet Farm completed">
-      <div><img class="photo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Capybara%20(Hydrochoerus%20hydrochaeris).JPG?width=1200" alt="Capybara" loading="lazy" decoding="async" width="1200" height="800">
-      <div class="photo-credit">Illustrative capybara photo: Wikimedia Commons</div>
-      <div class="time">10:00 AM departure · 10:30 AM–12:00 PM</div><h3>Capyba Pet Farm</h3>
-      <p>Interactive animal visit featuring capybaras and other animals. Reconfirm current admission arrangements and opening time before setting off.</p>
-      <details><summary>Family notes</summary><ul><li>Supervise hand-feeding closely.</li><li>Wash hands before snacks or lunch.</li><li>A shorter visit may suit the 4-year-old.</li></ul></details>
-      <div class="buttons">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=2%20Jalan%20Indah%2012/9%2C%20Johor%20Bahru%2C%20Johor&destination=Capyba%20Pet%20Farm%2C%20PTD68149%20P8%2C%20Jln%20Persisiran%20Sutera%20Danga%201%2C%20Taman%20Sutera%20Utama%2C%2081300%20Skudai%2C%20Johor%2C%20Malaysia&travelmode=driving" target="_blank" rel="noopener noreferrer">Drive there</a>
-        <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Capyba%20Pet%20Farm%2C%20PTD68149%20P8%2C%20Jln%20Persisiran%20Sutera%20Danga%201%2C%20Taman%20Sutera%20Utama%2C%2081300%20Skudai%2C%20Johor%2C%20Malaysia" target="_blank" rel="noopener noreferrer">View location</a>
-      </div></div>
+  <nav aria-label="Trip sections">
+    <div class="wrap">
+      <a href="#fri">Fri · ศุกร์</a>
+      <a href="#sat">Sat · เสาร์</a>
+      <a href="#sun">Sun · อาทิตย์</a>
+      <a href="#mon">Mon · จันทร์</a>
+      <a href="#notes">Notes · หมายเหตุ</a>
     </div>
-    <div class="card activity">
-      <input type="checkbox" data-id="sun-lunch" aria-label="Mark Sunday lunch completed">
-      <div><div class="time">12:15 PM–1:30 PM</div><h3>Lunch</h3><p>Eat near Sutera Utama or head toward central JB, depending on parking and the children’s energy.</p></div>
+  </nav>
+
+  <main class="wrap">
+    <div class="quick-grid" aria-label="Quick links">
+      <a
+        class="quick-card"
+        href="https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras.html"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <strong>🚦 Traffic cameras</strong>
+        <span class="thai" lang="th">กล้องจราจรด่านตรวจคนเข้าเมือง</span>
+      </a>
+
+      <a
+        class="quick-card"
+        href="https://www.google.com/maps/place/2,+Jalan+Indah+12%2F11,+Taman+Bukit+Indah,+81200+Johor+Bahru,+Johor+Darul+Ta'zim,+Malaysia/@1.4746396,103.6486686,17z/data=!3m1!4b1!4m6!3m5!1s0x31da0cb3b6db3a0f:0xf5fb2b020fce9a3a!8m2!3d1.4746342!4d103.6512435!16s%2Fg%2F11sbr0sqyp?entry=ttu&g_ep=EgoyMDI2MDgwMy4wIKXMDSoASAFQAw%3D%3D"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <strong>📍 Open accommodation</strong>
+        <span class="thai" lang="th">เปิดตำแหน่งที่พัก</span>
+      </a>
     </div>
-    <div class="card activity">
-      <input type="checkbox" data-id="sun-sks" aria-label="Mark SKS City Mall completed">
-      <div><img class="photo" src="https://sksgroup.com.my/wp-content/uploads/2024/03/header-retail-skscitymalljbcc-1.webp" alt="SKS City Mall JBCC exterior rendering" loading="lazy" decoding="async" width="1200" height="675">
-      <div class="photo-credit">Image: SKS Group official project page</div>
-      <div class="time">2:00 PM onwards</div><h3>SKS City Mall JBCC</h3>
-      <p>Indoor afternoon for shopping, food and rest. Current published hours are 10 AM–10 PM daily.</p>
-      <div class="buttons">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Capyba%20Pet%20Farm%2C%20PTD68149%20P8%2C%20Jln%20Persisiran%20Sutera%20Danga%201%2C%20Taman%20Sutera%20Utama%2C%2081300%20Skudai%2C%20Johor%2C%20Malaysia&destination=SKS%20City%20Mall%20JBCC%2C%20Jalan%20Storey%2C%20Bukit%20Senyum%2C%2080300%20Johor%20Bahru%2C%20Johor%2C%20Malaysia&travelmode=driving" target="_blank" rel="noopener noreferrer">Farm → SKS Mall</a>
-        <a class="btn alt" href="https://skscitymalljbcc.com/" target="_blank" rel="noopener noreferrer">Official site</a>
-      </div></div>
+
+    <div class="card note">
+      <strong>
+        Suggested timings
+        <span class="thai" lang="th">เวลาที่แนะนำ</span>
+      </strong>
+      <p>
+        The times below are flexible. For a group of 10, allow an extra 15–20 minutes for parking, toilets and regrouping.
+        <span class="thai" lang="th">เวลาต่อไปนี้สามารถปรับได้ สำหรับกลุ่ม 10 คน ควรเผื่อเวลาเพิ่ม 15–20 นาทีสำหรับจอดรถ เข้าห้องน้ำ และรวมกลุ่ม</span>
+      </p>
     </div>
-  </section>
 
-  <section id="mon">
-    <div class="dayhead"><h2>Monday · Easy Departure</h2><span class="date">10 Aug</span></div>
-    <div class="card activity"><input type="checkbox" data-id="mon-brunch"><div><div class="time">10:00 AM</div><h3>Brunch</h3><p>Keep it near the accommodation to reduce backtracking.</p></div></div>
-    <div class="card activity"><input type="checkbox" data-id="mon-market"><div><div class="time">11:15 AM</div><h3>Supermarket stop</h3><p>Buy groceries and road snacks. Assign one adult to watch the kids while others shop.</p></div></div>
-    <div class="card activity"><input type="checkbox" data-id="mon-wash"><div><div class="time">12:15 PM</div><h3>Car wash</h3><p>Use two nearby bays or stagger the cars so the group is not waiting together.</p></div></div>
-    <div class="card activity"><input type="checkbox" data-id="mon-home"><div><div class="time">After lunch</div><h3>Drive back to Singapore</h3><p>Check live checkpoint traffic before choosing the route and departure time.</p>
-      <div class="buttons"><a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Woodlands+Checkpoint" target="_blank" rel="noopener noreferrer">Woodlands route</a><a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Tuas+Checkpoint" target="_blank" rel="noopener noreferrer">Tuas route</a></div>
-    </div></div>
-  </section>
+    <div class="card progress-card">
+      <div class="progress-row">
+        <strong>
+          Trip progress
+          <span class="thai" lang="th">ความคืบหน้าของทริป</span>
+        </strong>
+        <span id="progressText" class="progress-text">0 of 0 completed</span>
+      </div>
 
-  <section id="notes">
-    <div class="dayhead"><h2>Group checklist</h2></div>
-    <div class="card">
-      <label><input type="checkbox" data-id="n-passports"> Passports and Wati arrival card checked</label><br><br>
-      <label><input type="checkbox" data-id="n-cars"> Both drivers have navigation and destination pins</label><br><br>
-      <label><input type="checkbox" data-id="n-kids"> Water, wipes, spare clothes and diapers packed</label><br><br>
-      <label><input type="checkbox" data-id="n-weather"> Weather and attraction operating status checked each morning</label><br><br>
-      <label><input type="checkbox" data-id="n-traffic"> Checkpoint traffic checked before return journey</label>
+      <div
+        class="progress-track"
+        role="progressbar"
+        aria-label="Trip progress"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="0"
+      >
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+
+      <div id="celebration" class="celebration">
+        🎉 Trip complete! Hope everyone had a wonderful weekend.
+        <span class="thai" lang="th">ทริปเสร็จสมบูรณ์แล้ว! ขอให้ทุกคนมีความสุขกับสุดสัปดาห์นี้</span>
+      </div>
     </div>
-    <div class="card optional">
-      <span class="tag">Editable note</span>
-      <h3>Trip notes</h3>
-      <textarea id="tripNotes" placeholder="Add restaurant choices, booking references or reminders…" style="width:100%;min-height:130px;border:1px solid var(--line);border-radius:12px;padding:12px;font:inherit"></textarea>
-      <p>Your checkboxes and notes are saved in this browser.</p>
-      <div class="buttons"><button type="button" class="btn alt" id="resetTrip">Reset checklist and notes</button></div>
+
+    <section id="fri">
+      <div class="dayhead">
+        <h2>
+          Friday · Arrival
+          <span class="thai" lang="th">วันศุกร์ · เดินทางมาถึง</span>
+        </h2>
+        <span class="date">7 Aug<br><span lang="th">7 ส.ค.</span></span>
+      </div>
+
+      <div class="card activity">
+        <input type="checkbox" data-id="fri-arrive" aria-label="Complete Friday arrival activity">
+        <div>
+          <div class="time">
+            Flexible
+            <span class="thai" lang="th">ปรับเวลาได้</span>
+          </div>
+
+          <h3>
+            Drive in, check in and settle down
+            <span class="thai" lang="th">เดินทางเข้ามา เช็กอิน และพักผ่อน</span>
+          </h3>
+
+          <p>
+            Keep the evening light. Confirm Saturday’s farm plan and split passengers between the two cars.
+            <span class="thai" lang="th">ช่วงเย็นพักผ่อนตามสบาย ยืนยันแผนไปฟาร์มในวันเสาร์ และแบ่งผู้โดยสารระหว่างรถสองคัน</span>
+          </p>
+
+          <div class="buttons">
+            <a
+              class="btn"
+              href="https://www.google.com/maps/place/2,+Jalan+Indah+12%2F11,+Taman+Bukit+Indah,+81200+Johor+Bahru,+Johor+Darul+Ta'zim,+Malaysia/@1.4746396,103.6486686,17z/data=!3m1!4b1!4m6!3m5!1s0x31da0cb3b6db3a0f:0xf5fb2b020fce9a3a!8m2!3d1.4746342!4d103.6512435!16s%2Fg%2F11sbr0sqyp?entry=ttu&g_ep=EgoyMDI2MDgwMy4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Open Airbnb in Maps · เปิด Airbnb ในแผนที่</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sat">
+      <div class="dayhead">
+        <h2>
+          Saturday · Farms &amp; Eco Botanic
+          <span class="thai" lang="th">วันเสาร์ · ฟาร์มและอีโคโบทานิก</span>
+        </h2>
+        <span class="date">8 Aug<br><span lang="th">8 ส.ค.</span></span>
+      </div>
+
+      <div class="card activity">
+        <input type="checkbox" data-id="sat-farm" aria-label="Complete Gentle Farms activity">
+        <div>
+          <img
+            class="photo"
+            src="https://static.wixstatic.com/media/43960e_652ffa33142a489da696f1759f8a68bb~mv2.jpg/v1/fill/w_980%2Ch_1307%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/43960e_652ffa33142a489da696f1759f8a68bb~mv2.jpg"
+            alt="Children feeding goats at Gentle Farms"
+            loading="lazy"
+            decoding="async"
+            width="980"
+            height="1307"
+          >
+
+          <div class="photo-credit">
+            Photo: Gentle Farms official farm-tour gallery
+            <span class="thai" lang="th">ภาพจากแกลเลอรีทัวร์ฟาร์มอย่างเป็นทางการของ Gentle Farms</span>
+          </div>
+
+          <div class="time">
+            9:30 AM departure · 10:00 AM–12:00 PM
+            <span class="thai" lang="th">ออกเดินทาง 9:30 น. · เที่ยว 10:00–12:00 น.</span>
+          </div>
+
+          <h3>
+            Gentle Farms
+            <span class="thai" lang="th">Gentle Farms</span>
+          </h3>
+
+          <p>
+            Family farm visit and animal feeding. Weekend opening is currently listed as 9 AM–5 PM; the free-and-easy tour is available for walk-ins during opening hours.
+            <span class="thai" lang="th">เยี่ยมชมฟาร์มสำหรับครอบครัวและให้อาหารสัตว์ ปัจจุบันระบุว่าเปิดวันหยุดสุดสัปดาห์เวลา 9:00–17:00 น. และสามารถเข้าชมแบบอิสระได้ในช่วงเวลาเปิดทำการ</span>
+          </p>
+
+          <details>
+            <summary>
+              Family notes
+              <span class="thai" lang="th">คำแนะนำสำหรับครอบครัว</span>
+            </summary>
+            <ul>
+              <li>Wear covered shoes.<span class="thai" lang="th">สวมรองเท้าหุ้มส้น</span></li>
+              <li>Bring water, hats and insect repellent.<span class="thai" lang="th">นำน้ำดื่ม หมวก และยากันแมลง</span></li>
+              <li>Check the weather before leaving.<span class="thai" lang="th">ตรวจสอบสภาพอากาศก่อนออกเดินทาง</span></li>
+            </ul>
+          </details>
+
+          <div class="buttons">
+            <a
+              class="btn"
+              href="https://www.google.com/maps/dir/?api=1&amp;origin=2%20Jalan%20Indah%2012/9%2C%20Johor%20Bahru%2C%20Johor&amp;destination=Gentle%20Farms%2C%20Jelutong%2C%2081550%20Gelang%20Patah%2C%20Johor%2C%20Malaysia&amp;travelmode=driving"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Drive there · นำทางไปที่นั่น</a>
+
+            <a
+              class="btn alt"
+              href="https://www.gentlefarms.my/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Official site · เว็บไซต์ทางการ</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card activity">
+        <input type="checkbox" data-id="sat-lunch" aria-label="Complete Saturday lunch activity">
+        <div>
+          <div class="time">
+            12:15 PM–1:30 PM
+            <span class="thai" lang="th">12:15–13:30 น.</span>
+          </div>
+
+          <h3>
+            Lunch &amp; cool-down
+            <span class="thai" lang="th">รับประทานอาหารกลางวันและพักคลายร้อน</span>
+          </h3>
+
+          <p>
+            Choose somewhere convenient near Gelang Patah or continue toward Eco Botanic.
+            <span class="thai" lang="th">เลือกร้านที่สะดวกใกล้เกลังปาตาห์ หรือเดินทางต่อไปทาง Eco Botanic</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="card activity">
+        <input type="checkbox" data-id="sat-eco" aria-label="Complete Eco Galleria activity">
+        <div>
+          <div class="place-placeholder" aria-hidden="true">
+            <div>
+              <div class="icon">🌿🏛️</div>
+              <strong>Eco Galleria</strong>
+              <div>cafés · shopping · cool-down</div>
+              <div class="thai" lang="th">คาเฟ่ · ช้อปปิ้ง · พักคลายร้อน</div>
+            </div>
+          </div>
+
+          <div class="time">
+            2:00 PM onwards
+            <span class="thai" lang="th">ตั้งแต่ 14:00 น. เป็นต้นไป</span>
+          </div>
+
+          <h3>
+            Eco Galleria
+            <span class="thai" lang="th">Eco Galleria</span>
+          </h3>
+
+          <p>
+            Easy afternoon for cafés, shopping and an air-conditioned break after the farm.
+            <span class="thai" lang="th">ช่วงบ่ายสบาย ๆ สำหรับคาเฟ่ ช้อปปิ้ง และพักในห้องปรับอากาศหลังจากเที่ยวฟาร์ม</span>
+          </p>
+
+          <div class="buttons">
+            <a
+              class="btn"
+              href="https://www.google.com/maps/dir/?api=1&amp;origin=Gentle%20Farms%2C%20Jelutong%2C%2081550%20Gelang%20Patah%2C%20Johor%2C%20Malaysia&amp;destination=Eco%20Galleria%2C%20Jalan%20Eko%20Botani%203%2C%20Taman%20Eko%20Botani%2C%2079100%20Iskandar%20Puteri%2C%20Johor%2C%20Malaysia&amp;travelmode=driving"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Farm → Eco Galleria · ฟาร์ม → Eco Galleria</a>
+
+            <a
+              class="btn alt"
+              href="https://www.google.com/maps/search/?api=1&amp;query=Eco%20Galleria%2C%20Jalan%20Eko%20Botani%203%2C%20Taman%20Eko%20Botani%2C%2079100%20Iskandar%20Puteri%2C%20Johor%2C%20Malaysia"
+              target="_blank"
+              rel="noopener noreferrer"
+            >View location · ดูตำแหน่ง</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sun">
+      <div class="dayhead">
+        <h2>
+          Sunday · Capybaras &amp; City Mall
+          <span class="thai" lang="th">วันอาทิตย์ · คาปิบาราและห้างในเมือง</span>
+        </h2>
+        <span class="date">9 Aug<br><span lang="th">9 ส.ค.</span></span>
+      </div>
+
+      <div class="card activity">
+        <input type="checkbox" data-id="sun-capy" aria-label="Complete Capyba Pet Farm activity">
+        <div>
+          <img
+            class="photo capy"
+            src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Capybara%20(Hydrochoerus%20hydrochaeris).JPG?width=1200"
+            alt="Capybara"
+            loading="lazy"
+            decoding="async"
+            width="1200"
+            height="800"
+          >
+
+          <div class="photo-credit">
+            Illustrative capybara photo: Wikimedia Commons
+            <span class="thai" lang="th">ภาพประกอบคาปิบาราจาก Wikimedia Commons</span>
+          </div>
+
+          <div class="time">
+            10:00 AM departure · 10:30 AM–12:00 PM
+            <span class="thai" lang="th">ออกเดินทาง 10:00 น. · เที่ยว 10:30–12:00 น.</span>
+          </div>
+
+          <h3>
+            Capyba Pet Farm
+            <span class="thai" lang="th">Capyba Pet Farm</span>
+          </h3>
+
+          <p>
+            Interactive animal visit featuring capybaras and other animals. Reconfirm current admission arrangements and opening time before setting off.
+            <span class="thai" lang="th">เยี่ยมชมและทำกิจกรรมกับคาปิบาราและสัตว์ชนิดอื่น โปรดยืนยันวิธีเข้าชมและเวลาเปิดล่าสุดก่อนออกเดินทาง</span>
+          </p>
+
+          <details>
+            <summary>
+              Family notes
+              <span class="thai" lang="th">คำแนะนำสำหรับครอบครัว</span>
+            </summary>
+            <ul>
+              <li>Supervise hand-feeding closely.<span class="thai" lang="th">ดูแลเด็กอย่างใกล้ชิดขณะให้อาหารสัตว์</span></li>
+              <li>Wash hands before snacks or lunch.<span class="thai" lang="th">ล้างมือก่อนรับประทานของว่างหรืออาหารกลางวัน</span></li>
+              <li>A shorter visit may suit the 4-year-old.<span class="thai" lang="th">เด็กอายุ 4 ปีอาจเหมาะกับการเข้าชมระยะเวลาสั้นกว่า</span></li>
+            </ul>
+          </details>
+
+          <div class="buttons">
+            <a
+              class="btn"
+              href="https://www.google.com/maps/dir/?api=1&amp;origin=2%20Jalan%20Indah%2012/9%2C%20Johor%20Bahru%2C%20Johor&amp;destination=Capyba%20Pet%20Farm%2C%20PTD68149%20P8%2C%20Jln%20Persisiran%20Sutera%20Danga%201%2C%20Taman%20Sutera%20Utama%2C%2081300%20Skudai%2C%20Johor%2C%20Malaysia&amp;travelmode=driving"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Drive there · นำทางไปที่นั่น</a>
+
+            <a
+              class="btn alt"
+              href="https://www.google.com/maps/search/?api=1&amp;query=Capyba%20Pet%20Farm%2C%20PTD68149%20P8%2C%20Jln%20Persisiran%20Sutera%20Danga%201%2C%20Taman%20Sutera%20Utama%2C%2081300%20Skudai%2C%20Johor%2C%20Malaysia"
+              target="_blank"
+              rel="noopener noreferrer"
+            >View location · ดูตำแหน่ง</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card activity">
+        <input type="checkbox" data-id="sun-lunch" aria-label="Complete Sunday lunch activity">
+        <div>
+          <div class="time">
+            12:15 PM–1:30 PM
+            <span class="thai" lang="th">12:15–13:30 น.</span>
+          </div>
+
+          <h3>
+            Lunch
+            <span class="thai" lang="th">รับประทานอาหารกลางวัน</span>
+          </h3>
+
+          <p>
+            Eat near Sutera Utama or head toward central JB, depending on parking and the children’s energy.
+            <span class="thai" lang="th">รับประทานอาหารใกล้ Sutera Utama หรือเดินทางเข้าตัวเมือง JB โดยพิจารณาจากที่จอดรถและพลังของเด็ก ๆ</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="card activity">
+        <input type="checkbox" data-id="sun-sks" aria-label="Complete SKS City Mall activity">
+        <div>
+          <img
+            class="photo sks"
+            src="https://sksgroup.com.my/wp-content/uploads/2024/03/header-retail-skscitymalljbcc-1.webp"
+            alt="SKS City Mall JBCC exterior rendering"
+            loading="lazy"
+            decoding="async"
+            width="1200"
+            height="675"
+          >
+
+          <div class="photo-credit">
+            Image: SKS Group official project page
+            <span class="thai" lang="th">ภาพจากหน้าโครงการอย่างเป็นทางการของ SKS Group</span>
+          </div>
+
+          <div class="time">
+            2:00 PM onwards
+            <span class="thai" lang="th">ตั้งแต่ 14:00 น. เป็นต้นไป</span>
+          </div>
+
+          <h3>
+            SKS City Mall JBCC
+            <span class="thai" lang="th">SKS City Mall JBCC</span>
+          </h3>
+
+          <p>
+            Indoor afternoon for shopping, food and rest. Current published hours are 10 AM–10 PM daily.
+            <span class="thai" lang="th">ช่วงบ่ายในอาคารสำหรับช้อปปิ้ง รับประทานอาหาร และพักผ่อน เวลาที่ประกาศในปัจจุบันคือ 10:00–22:00 น. ทุกวัน</span>
+          </p>
+
+          <div class="buttons">
+            <a
+              class="btn"
+              href="https://www.google.com/maps/dir/?api=1&amp;origin=Capyba%20Pet%20Farm%2C%20PTD68149%20P8%2C%20Jln%20Persisiran%20Sutera%20Danga%201%2C%20Taman%20Sutera%20Utama%2C%2081300%20Skudai%2C%20Johor%2C%20Malaysia&amp;destination=SKS%20City%20Mall%20JBCC%2C%20Jalan%20Storey%2C%20Bukit%20Senyum%2C%2080300%20Johor%20Bahru%2C%20Johor%2C%20Malaysia&amp;travelmode=driving"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Farm → SKS Mall · ฟาร์ม → SKS Mall</a>
+
+            <a
+              class="btn alt"
+              href="https://skscitymalljbcc.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Official site · เว็บไซต์ทางการ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mon">
+      <div class="dayhead">
+        <h2>
+          Monday · Easy Departure
+          <span class="thai" lang="th">วันจันทร์ · เดินทางกลับแบบสบาย ๆ</span>
+        </h2>
+        <span class="date">10 Aug<br><span lang="th">10 ส.ค.</span></span>
+      </div>
+
+      <div class="card activity">
+        <input type="checkbox" data-id="mon-brunch" aria-label="Complete brunch activity">
+        <div>
+          <div class="time">10:00 AM<span class="thai" lang="th">10:00 น.</span></div>
+          <h3>Brunch<span class="thai" lang="th">อาหารมื้อสาย</span></h3>
+          <p>
+            Keep it near the accommodation to reduce backtracking.
+            <span class="thai" lang="th">เลือกร้านใกล้ที่พักเพื่อลดการเดินทางย้อนกลับ</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="card activity">
+        <input type="checkbox" data-id="mon-market" aria-label="Complete supermarket activity">
+        <div>
+          <div class="time">11:15 AM<span class="thai" lang="th">11:15 น.</span></div>
+          <h3>Supermarket stop<span class="thai" lang="th">แวะซูเปอร์มาร์เก็ต</span></h3>
+          <p>
+            Buy groceries and road snacks. Assign one adult to watch the kids while others shop.
+            <span class="thai" lang="th">ซื้อของใช้และของว่างสำหรับเดินทาง ให้ผู้ใหญ่หนึ่งคนดูแลเด็กขณะที่คนอื่นซื้อของ</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="card activity">
+        <input type="checkbox" data-id="mon-wash" aria-label="Complete car wash activity">
+        <div>
+          <div class="time">12:15 PM<span class="thai" lang="th">12:15 น.</span></div>
+          <h3>Car wash<span class="thai" lang="th">ล้างรถ</span></h3>
+          <p>
+            Use two nearby bays or stagger the cars so the group is not waiting together.
+            <span class="thai" lang="th">ใช้ช่องล้างรถสองช่องใกล้กัน หรือสลับเวลาของรถทั้งสองคันเพื่อไม่ให้ทุกคนต้องรอพร้อมกัน</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="card activity">
+        <input type="checkbox" data-id="mon-home" aria-label="Complete return to Singapore activity">
+        <div>
+          <div class="time">
+            After lunch
+            <span class="thai" lang="th">หลังอาหารกลางวัน</span>
+          </div>
+
+          <h3>
+            Drive back to Singapore
+            <span class="thai" lang="th">ขับรถกลับสิงคโปร์</span>
+          </h3>
+
+          <p>
+            Check live checkpoint traffic before choosing the route and departure time.
+            <span class="thai" lang="th">ตรวจสอบสภาพการจราจรที่ด่านแบบสดก่อนเลือกเส้นทางและเวลาออกเดินทาง</span>
+          </p>
+
+          <div class="buttons">
+            <a
+              class="btn alt"
+              href="https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Traffic cameras · กล้องจราจร</a>
+
+            <a
+              class="btn alt"
+              href="https://www.google.com/maps/search/?api=1&amp;query=Woodlands+Checkpoint"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Woodlands route · เส้นทาง Woodlands</a>
+
+            <a
+              class="btn alt"
+              href="https://www.google.com/maps/search/?api=1&amp;query=Tuas+Checkpoint"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Tuas route · เส้นทาง Tuas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="notes">
+      <div class="dayhead">
+        <h2>
+          Group checklist
+          <span class="thai" lang="th">รายการตรวจสอบของกลุ่ม</span>
+        </h2>
+      </div>
+
+      <div class="card">
+        <label>
+          <input type="checkbox" data-id="n-passports">
+          Passports and arrival cards checked
+          <span class="thai" lang="th">ตรวจสอบหนังสือเดินทางและบัตรขาเข้าแล้ว</span>
+        </label>
+        <br><br>
+
+        <label>
+          <input type="checkbox" data-id="n-cars">
+          Both drivers have navigation and destination pins
+          <span class="thai" lang="th">คนขับทั้งสองคนมีแผนที่นำทางและหมุดปลายทาง</span>
+        </label>
+        <br><br>
+
+        <label>
+          <input type="checkbox" data-id="n-kids">
+          Water, wipes, spare clothes and diapers packed
+          <span class="thai" lang="th">เตรียมน้ำ ทิชชูเปียก เสื้อผ้าสำรอง และผ้าอ้อมแล้ว</span>
+        </label>
+        <br><br>
+
+        <label>
+          <input type="checkbox" data-id="n-weather">
+          Weather and attraction operating status checked each morning
+          <span class="thai" lang="th">ตรวจสอบสภาพอากาศและสถานะเปิดให้บริการของสถานที่ทุกเช้า</span>
+        </label>
+        <br><br>
+
+        <label>
+          <input type="checkbox" data-id="n-traffic">
+          Checkpoint traffic checked before return journey
+          <span class="thai" lang="th">ตรวจสอบการจราจรที่ด่านก่อนเดินทางกลับ</span>
+        </label>
+      </div>
+
+      <div class="card optional">
+        <span class="tag">Editable note · แก้ไขได้</span>
+
+        <h3>
+          Trip notes
+          <span class="thai" lang="th">บันทึกการเดินทาง</span>
+        </h3>
+
+        <textarea
+          id="tripNotes"
+          placeholder="Add restaurant choices, booking references or reminders… / เพิ่มร้านอาหาร หมายเลขการจอง หรือสิ่งที่ต้องเตือน…"
+        ></textarea>
+
+        <p>
+          Your checkboxes and notes are saved in this browser.
+          <span class="thai" lang="th">ช่องที่ทำเครื่องหมายและบันทึกจะถูกเก็บไว้ในเบราว์เซอร์นี้</span>
+        </p>
+
+        <div class="buttons">
+          <button type="button" class="btn danger" id="resetTrip">
+            Reset checklist and notes · รีเซ็ตรายการและบันทึก
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      JB Family Weekend · Built as a single-file static site for GitHub Pages
+      <span class="thai" lang="th">ทริปครอบครัว JB · เว็บไซต์ไฟล์เดียวสำหรับ GitHub Pages</span>
     </div>
-  </section>
+  </main>
 
-  <div class="footer">JB Family Weekend · Built as a single-file static site for GitHub Pages</div>
-</main>
+  <script>
+    const checkboxes = Array.from(
+      document.querySelectorAll('input[type="checkbox"][data-id]')
+    );
 
-<script>
-  const checkboxes = [...document.querySelectorAll('input[type="checkbox"][data-id]')];
-  const progressText = document.getElementById('progressText');
-  const progressBar = document.getElementById('progressBar');
-  const celebration = document.getElementById('celebration');
+    const activityCheckboxes = checkboxes.filter(
+      checkbox => checkbox.closest('.activity')
+    );
 
-  function updateCardState(cb) {
-    cb.closest('.activity')?.classList.toggle('completed', cb.checked);
-  }
+    const progressText = document.getElementById('progressText');
+    const progressBar = document.getElementById('progressBar');
+    const progressTrack = document.querySelector('.progress-track');
+    const celebration = document.getElementById('celebration');
+    const notes = document.getElementById('tripNotes');
+    const resetButton = document.getElementById('resetTrip');
 
-  function updateProgress() {
-    const completed = checkboxes.filter(cb => cb.checked).length;
-    const total = checkboxes.length;
-    const percent = total ? Math.round((completed / total) * 100) : 0;
-    progressText.textContent = `${completed} of ${total} completed`;
-    progressBar.style.width = `${percent}%`;
-    celebration.classList.toggle('show', completed === total && total > 0);
-  }
+    function updateCardState(checkbox) {
+      const activity = checkbox.closest('.activity');
 
-  checkboxes.forEach(cb => {
-    cb.checked = localStorage.getItem('jb-' + cb.dataset.id) === '1';
-    updateCardState(cb);
-    cb.addEventListener('change', () => {
-      localStorage.setItem('jb-' + cb.dataset.id, cb.checked ? '1' : '0');
-      updateCardState(cb);
+      if (activity) {
+        activity.classList.toggle('completed', checkbox.checked);
+      }
+    }
+
+    function updateProgress() {
+      const total = activityCheckboxes.length;
+      const completed = activityCheckboxes.filter(
+        checkbox => checkbox.checked
+      ).length;
+      const percentage = total === 0 ? 0 : Math.round((completed / total) * 100);
+
+      progressText.innerHTML = `${completed} of ${total} completed<br><span lang="th">เสร็จแล้ว ${completed} จาก ${total} รายการ</span>`;
+      progressBar.style.width = `${percentage}%`;
+      progressTrack.setAttribute('aria-valuenow', String(percentage));
+      celebration.style.display = total > 0 && completed === total ? 'block' : 'none';
+    }
+
+    checkboxes.forEach(checkbox => {
+      checkbox.checked = localStorage.getItem(`jb-${checkbox.dataset.id}`) === '1';
+      updateCardState(checkbox);
+
+      checkbox.addEventListener('change', () => {
+        localStorage.setItem(
+          `jb-${checkbox.dataset.id}`,
+          checkbox.checked ? '1' : '0'
+        );
+
+        updateCardState(checkbox);
+        updateProgress();
+      });
+    });
+
+    notes.value = localStorage.getItem('jb-trip-notes') || '';
+
+    notes.addEventListener('input', () => {
+      localStorage.setItem('jb-trip-notes', notes.value);
+    });
+
+    resetButton.addEventListener('click', () => {
+      const confirmed = window.confirm(
+        'Reset all checkboxes and trip notes?\nรีเซ็ตช่องทำเครื่องหมายและบันทึกทั้งหมดหรือไม่?'
+      );
+
+      if (!confirmed) {
+        return;
+      }
+
+      Object.keys(localStorage)
+        .filter(key => key.startsWith('jb-'))
+        .forEach(key => localStorage.removeItem(key));
+
+      checkboxes.forEach(checkbox => {
+        checkbox.checked = false;
+        updateCardState(checkbox);
+      });
+
+      notes.value = '';
       updateProgress();
     });
-  });
 
-  const notes = document.getElementById('tripNotes');
-  notes.value = localStorage.getItem('jb-trip-notes') || '';
-  notes.addEventListener('input', () => localStorage.setItem('jb-trip-notes', notes.value));
+    const sections = Array.from(document.querySelectorAll('main section[id]'));
+    const navLinks = Array.from(document.querySelectorAll('nav a[href^="#"]'));
 
-  document.getElementById('resetTrip').addEventListener('click', () => {
-    if (!confirm('Reset all checkboxes and trip notes?')) return;
-    Object.keys(localStorage).filter(key => key.startsWith('jb-')).forEach(key => localStorage.removeItem(key));
-    checkboxes.forEach(cb => { cb.checked = false; updateCardState(cb); });
-    notes.value = '';
+    const sectionObserver = new IntersectionObserver(
+      entries => {
+        const visibleEntry = entries
+          .filter(entry => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (!visibleEntry) {
+          return;
+        }
+
+        navLinks.forEach(link => {
+          link.classList.toggle(
+            'active',
+            link.getAttribute('href') === `#${visibleEntry.target.id}`
+          );
+        });
+      },
+      {
+        rootMargin: '-25% 0px -60% 0px',
+        threshold: [0.05, 0.2, 0.5]
+      }
+    );
+
+    sections.forEach(section => sectionObserver.observe(section));
+
     updateProgress();
-  });
-
-  const sections = [...document.querySelectorAll('main section[id]')];
-  const navLinks = [...document.querySelectorAll('nav a')];
-  const observer = new IntersectionObserver(entries => {
-    const visible = entries.filter(entry => entry.isIntersecting).sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
-    if (!visible) return;
-    navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + visible.target.id));
-  }, {rootMargin:'-25% 0px -60% 0px', threshold:[0,.25,.5]});
-  sections.forEach(section => observer.observe(section));
-
-  const tripStart = new Date('2026-08-07T00:00:00+08:00');
-  const tripEnd = new Date('2026-08-10T23:59:59+08:00');
-  const now = new Date();
-  const title = document.getElementById('countdownTitle');
-  const text = document.getElementById('countdownText');
-  if (now < tripStart) {
-    const days = Math.ceil((tripStart - now) / 86400000);
-    title.textContent = 'Trip countdown';
-    text.textContent = `${days} day${days === 1 ? '' : 's'} to go`;
-  } else if (now <= tripEnd) {
-    const day = Math.min(4, Math.floor((now - tripStart) / 86400000) + 1);
-    title.textContent = `Day ${day} of 4`;
-    text.textContent = 'Have a wonderful family weekend!';
-  } else {
-    title.textContent = 'Trip memories';
-    text.textContent = 'The itinerary remains available as your family trip record.';
-  }
-
-  updateProgress();
-</script>
+  </script>
 </body>
 </html>
